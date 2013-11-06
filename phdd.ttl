@@ -1,1 +1,211 @@
-test
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix dcat: <http://www.w3.org/ns/dcat#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix disco: <http://rdf-vocabulary.ddialliance.org/discovery#>.
+@prefix phdd: <http://rdf-vocabulary.ddialliance.org/phdd#>.
+
+
+#################################################################
+# Ontology
+#################################################################
+
+<http://rdf-vocabulary.ddialliance.org/phdd> a owl:Ontology;
+    dc:title
+        "physical data description"@en;
+    rdfs:comment
+        "physical data description"@en;
+    dc:creator
+        "Joachim Wackerow",
+		"Thomas Bosch",
+        "Larry Hoyle";
+    dc:contributor
+		"Richard Cyganiak";
+    owl:versionInfo "2013-11-06".
+
+#################################################################
+# Classes
+#################################################################
+
+# Table
+phdd:Table a rdfs:Class, owl:Class;
+    rdfs:label "Table"@en;
+	rdfs:comment "Table"@en;
+    rdfs:isDefinedBy <http://rdf-vocabulary.ddialliance.org/phdd>;
+    rdfs:subClassOf dcat:Distribution;
+	owl:equivalentClass disco:DataFile.
+
+# InputProgram
+phdd:InputProgram a rdfs:Class, owl:Class;
+    rdfs:label "input program"@en;
+	rdfs:comment "input program"@en;
+    rdfs:isDefinedBy <http://rdf-vocabulary.ddialliance.org/phdd>.
+	
+# TableDescription
+phdd:TableDescription a rdfs:Class, owl:Class;
+    rdfs:label "table description"@en;
+	rdfs:comment "table description"@en;
+    rdfs:isDefinedBy <http://rdf-vocabulary.ddialliance.org/phdd>.
+	
+# TableStructure
+phdd:TableStructure a rdfs:Class, owl:Class;
+    rdfs:label "table structure"@en;
+	rdfs:comment "table structure"@en;
+    rdfs:isDefinedBy <http://rdf-vocabulary.ddialliance.org/phdd>.
+	
+# FixedRecordLength
+phdd:FixedRecordLength a rdfs:Class, owl:Class;
+    rdfs:label "fixed record length"@en;
+	rdfs:comment "fixed record length"@en;
+    rdfs:isDefinedBy <http://rdf-vocabulary.ddialliance.org/phdd>;
+	rdfs:subClassOf phdd:TableStructure.
+	
+# Delimited
+phdd:Delimited a rdfs:Class, owl:Class;
+    rdfs:label "delimited"@en;
+	rdfs:comment "delimited"@en;
+    rdfs:isDefinedBy <http://rdf-vocabulary.ddialliance.org/phdd>;
+	rdfs:subClassOf phdd:TableStructure.
+	
+# Column
+phdd:Column a rdfs:Class, owl:Class;
+    rdfs:label "column"@en;
+	rdfs:comment "column"@en;
+    rdfs:isDefinedBy <http://rdf-vocabulary.ddialliance.org/phdd>;
+	owl:equivalentClass disco:Variable.
+	
+# ColumnDescription
+phdd:ColumnDescription a rdfs:Class, owl:Class;
+    rdfs:label "column description"@en;
+	rdfs:comment "column description"@en;
+    rdfs:isDefinedBy <http://rdf-vocabulary.ddialliance.org/phdd>.
+	
+# DelimitedColumnDescription
+phdd:DelimitedColumnDescription a rdfs:Class, owl:Class;
+    rdfs:label "delimited column description"@en;
+	rdfs:comment "delimited column description"@en;
+    rdfs:isDefinedBy <http://rdf-vocabulary.ddialliance.org/phdd>;
+	rdfs:subClassOf phdd:ColumnDescription.
+	
+# FixedColumnDescription
+phdd:FixedColumnDescription a rdfs:Class, owl:Class;
+    rdfs:label "fixed column description"@en;
+	rdfs:comment "fixed column description"@en;
+    rdfs:isDefinedBy <http://rdf-vocabulary.ddialliance.org/phdd>;
+	rdfs:subClassOf phdd:ColumnDescription.
+
+#################################################################
+# Datatype properties
+#################################################################
+
+# programFileName
+phdd:programFileName a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "program file name"@en;
+	rdfs:comment "program file name"@en;
+    rdfs:domain phdd:InputProgram;
+    rdfs:range xsd:string;
+    rdfs:isDefinedBy <http://rdf-vocabulary.ddialliance.org/phdd>.
+
+# softwareType
+phdd:softwareType a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "software type"@en;
+	rdfs:comment "software type"@en;
+    rdfs:domain phdd:InputProgram;
+    rdfs:range xsd:string;
+    rdfs:isDefinedBy <http://rdf-vocabulary.ddialliance.org/phdd>.
+	
+# programVersion
+phdd:programVersion a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "program version"@en;
+	rdfs:comment "program version"@en;
+    rdfs:domain phdd:InputProgram;
+    rdfs:range xsd:string;
+    rdfs:isDefinedBy <http://rdf-vocabulary.ddialliance.org/phdd>.
+	
+# caseQuantity
+phdd:caseQuantity a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "case quantity"@en;
+	rdfs:comment "case quantity"@en;
+    rdfs:domain phdd:TableDescription;
+    rdfs:range xsd:nonNegativeInteger;
+    rdfs:isDefinedBy <http://rdf-vocabulary.ddialliance.org/phdd>.
+
+#################################################################
+# Object properties
+#################################################################
+
+# inputProgram
+phdd:inputProgram a rdf:Property, owl:ObjectProperty;
+    rdfs:label "input program"@en;
+	rdfs:comment "inputProgram"@en;
+    rdfs:domain phdd:TableDescription;
+    rdfs:range phdd:InputProgram;
+    rdfs:isDefinedBy <http://rdf-vocabulary.ddialliance.org/phdd>.
+
+# isDescribedBy
+phdd:isDescribedBy a rdf:Property, owl:ObjectProperty;
+    rdfs:label "is described by"@en;
+	rdfs:comment "is described by"@en;
+    rdfs:domain [a owl:Class; owl:unionOf (phdd:Table phdd:Column)];
+    rdfs:range [a owl:Class; owl:unionOf (phdd:TableDescription phdd:ColumnDescription)];
+    rdfs:isDefinedBy <http://rdf-vocabulary.ddialliance.org/phdd>.
+	
+# isStructuredBy
+phdd:isStructuredBy a rdf:Property, owl:ObjectProperty;
+    rdfs:label "is structured by"@en;
+	rdfs:comment "is structured by"@en;
+    rdfs:domain phdd:Table;
+    rdfs:range phdd:TableStructure;
+    rdfs:isDefinedBy <http://rdf-vocabulary.ddialliance.org/phdd>.
+	
+# column
+phdd:column a rdf:Property, owl:ObjectProperty;
+    rdfs:label "column"@en;
+	rdfs:comment "column"@en;
+    rdfs:domain phdd:TableStructure;
+    rdfs:range phdd:Column;
+    rdfs:isDefinedBy <http://rdf-vocabulary.ddialliance.org/phdd>.
+	
+# defaultLocale
+phdd:defaultLocale a rdf:Property, owl:ObjectProperty;
+    rdfs:label "default locale"@en;
+	rdfs:comment "default locale"@en;
+    rdfs:domain phdd:TableStructure;
+    rdfs:range [a owl:Class; owl:unionOf (skos:Concept xsd:string)];
+    rdfs:isDefinedBy <http://rdf-vocabulary.ddialliance.org/phdd>.
+	
+# characterSet
+phdd:characterSet a rdf:Property, owl:ObjectProperty;
+    rdfs:label "character set"@en;
+	rdfs:comment "character set"@en;
+    rdfs:domain phdd:TableStructure;
+    rdfs:range [a owl:Class; owl:unionOf (skos:Concept xsd:string)];
+    rdfs:isDefinedBy <http://rdf-vocabulary.ddialliance.org/phdd>.
+	
+# defaultLanguage
+phdd:defaultLanguage a rdf:Property, owl:ObjectProperty;
+    rdfs:label "default language"@en;
+	rdfs:comment "default language"@en;
+    rdfs:domain phdd:TableStructure;
+    rdfs:range [a owl:Class; owl:unionOf (skos:Concept xsd:string)];
+    rdfs:isDefinedBy <http://rdf-vocabulary.ddialliance.org/phdd>.
+	
+# storageFormat
+phdd:storageFormat a rdf:Property, owl:ObjectProperty;
+    rdfs:label "storage format"@en;
+	rdfs:comment "storage format"@en;
+    rdfs:domain phdd:ColumnDescription;
+    rdfs:range [a owl:Class; owl:unionOf (skos:Concept xsd:string)];
+    rdfs:isDefinedBy <http://rdf-vocabulary.ddialliance.org/phdd>.
+	
+# recommendedDisplayDataFormat
+phdd:recommendedDisplayDataFormat a rdf:Property, owl:ObjectProperty;
+    rdfs:label "recommended display data format"@en;
+	rdfs:comment "recommended display data format"@en;
+    rdfs:domain phdd:ColumnDescription;
+    rdfs:range [a owl:Class; owl:unionOf (skos:Concept xsd:string)];
+    rdfs:isDefinedBy <http://rdf-vocabulary.ddialliance.org/phdd>.
