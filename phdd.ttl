@@ -35,9 +35,16 @@
 phdd:Table a rdfs:Class, owl:Class;
     rdfs:label "Table"@en;
 	rdfs:comment "Table"@en;
-    rdfs:isDefinedBy <http://rdf-vocabulary.ddialliance.org/phdd>;
     rdfs:subClassOf dcat:Distribution;
-	owl:equivalentClass disco:DataFile.
+	owl:equivalentClass disco:DataFile;
+	rdfs:subClassOf
+		[ a owl:Restriction;
+		  owl:onProperty phdd:isDescribedBy;
+		  owl:onClass phdd:TableDescription;
+		  owl:minCardinality 1;
+		  owl:maxCardinality 1
+		];
+	rdfs:isDefinedBy <http://rdf-vocabulary.ddialliance.org/phdd>.
 
 # InputProgram
 phdd:InputProgram a rdfs:Class, owl:Class;
@@ -49,6 +56,12 @@ phdd:InputProgram a rdfs:Class, owl:Class;
 phdd:TableDescription a rdfs:Class, owl:Class;
     rdfs:label "table description"@en;
 	rdfs:comment "table description"@en;
+	rdfs:subClassOf
+		[ a owl:Restriction;
+          owl:onProperty [owl:inverseOf phdd:inputProgram];
+		  owl:onClass phdd:InputProgram;
+		  owl:maxCardinality 0
+		];
     rdfs:isDefinedBy <http://rdf-vocabulary.ddialliance.org/phdd>.
 	
 # TableStructure
@@ -132,6 +145,174 @@ phdd:caseQuantity a rdf:Property, owl:DatatypeProperty;
 	rdfs:comment "case quantity"@en;
     rdfs:domain phdd:TableDescription;
     rdfs:range xsd:nonNegativeInteger;
+    rdfs:isDefinedBy <http://rdf-vocabulary.ddialliance.org/phdd>.
+	
+# fileName
+phdd:fileName a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "file name"@en;
+	rdfs:comment "file name"@en;
+    rdfs:domain phdd:TableDescription;
+    rdfs:range [a owl:Class; owl:unionOf (phdd:TableDescription phdd:InputProgram)];
+    rdfs:isDefinedBy <http://rdf-vocabulary.ddialliance.org/phdd>.
+	
+# recordsPerCase
+phdd:recordsPerCase a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "records per case"@en;
+	rdfs:comment "records per case"@en;
+    rdfs:domain phdd:TableDescription;
+    rdfs:range xsd:positiveInteger;
+    rdfs:isDefinedBy <http://rdf-vocabulary.ddialliance.org/phdd>.
+	
+# overallRecordCount
+phdd:overallRecordCount a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "overall record count"@en;
+	rdfs:comment "overall record count"@en;
+    rdfs:domain phdd:TableDescription;
+    rdfs:range xsd:nonNegativeInteger;
+    rdfs:isDefinedBy <http://rdf-vocabulary.ddialliance.org/phdd>.
+	
+# recordLength
+phdd:recordLength a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "record length"@en;
+	rdfs:comment "record length"@en;
+    rdfs:domain phdd:FixedRecordLength;
+    rdfs:range xsd:nonPositiveInteger;
+    rdfs:isDefinedBy <http://rdf-vocabulary.ddialliance.org/phdd>.
+	
+# delimiter
+phdd:delimiter a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "delimiter"@en;
+	rdfs:comment "delimiter"@en;
+    rdfs:domain phdd:Delimited;
+    rdfs:range xsd:string;
+    rdfs:isDefinedBy <http://rdf-vocabulary.ddialliance.org/phdd>.
+	
+# textQualifier
+phdd:textQualifier a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "text qualifier"@en;
+	rdfs:comment "text qualifier"@en;
+    rdfs:domain phdd:Delimited;
+    rdfs:range xsd:string;
+    rdfs:isDefinedBy <http://rdf-vocabulary.ddialliance.org/phdd>.
+	
+# consecutiveDelimitersAsOne
+phdd:consecutiveDelimitersAsOne a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "consecutive delimiters as one"@en;
+	rdfs:comment "consecutive delimiters as one"@en;
+    rdfs:domain phdd:Delimited;
+    rdfs:range xsd:boolean;
+    rdfs:isDefinedBy <http://rdf-vocabulary.ddialliance.org/phdd>.
+	
+# namesOnFirstRow
+phdd:namesOnFirstRow a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "names on first row"@en;
+	rdfs:comment "names on first row"@en;
+    rdfs:domain phdd:Delimited;
+    rdfs:range xsd:boolean;
+    rdfs:isDefinedBy <http://rdf-vocabulary.ddialliance.org/phdd>.
+	
+# firstDataLine
+phdd:firstDataLine a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "first data line"@en;
+	rdfs:comment "first data line"@en;
+    rdfs:domain phdd:Delimited;
+    rdfs:range xsd:positiveInteger;
+    rdfs:isDefinedBy <http://rdf-vocabulary.ddialliance.org/phdd>.
+	
+# firstDataLine
+phdd:firstDataLine a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "first data line"@en;
+	rdfs:comment "first data line"@en;
+    rdfs:domain phdd:Delimited;
+    rdfs:range xsd:positiveInteger;
+    rdfs:isDefinedBy <http://rdf-vocabulary.ddialliance.org/phdd>.
+	
+# defaultDecimalSeparator
+phdd:defaultDecimalSeparator a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "default decimal separator"@en;
+	rdfs:comment "default decimal separator"@en;
+    rdfs:domain phdd:TableStructure;
+    rdfs:range xsd:string;
+    rdfs:isDefinedBy <http://rdf-vocabulary.ddialliance.org/phdd>.
+	
+# defaultDigitGroupSeparator
+phdd:defaultDigitGroupSeparator a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "default digit group separator"@en;
+	rdfs:comment "default digit group separator"@en;
+    rdfs:domain phdd:TableStructure;
+    rdfs:range xsd:string;
+    rdfs:isDefinedBy <http://rdf-vocabulary.ddialliance.org/phdd>.
+	
+# defaultDecimalPositions
+phdd:defaultDecimalPositions a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "default decimal positions"@en;
+	rdfs:comment "default decimal positions"@en;
+    rdfs:domain phdd:TableStructure;
+    rdfs:range xsd:positiveInteger;
+    rdfs:isDefinedBy <http://rdf-vocabulary.ddialliance.org/phdd>.
+	
+# newLine
+phdd:newLine a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "new line"@en;
+	rdfs:comment "new line"@en;
+    rdfs:domain phdd:TableStructure;
+    rdfs:range xsd:string;
+    rdfs:isDefinedBy <http://rdf-vocabulary.ddialliance.org/phdd>.
+	
+# columnPosition
+phdd:columnPosition a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "column position"@en;
+	rdfs:comment "column position"@en;
+    rdfs:domain phdd:DelimitedColumnDescription;
+    rdfs:range xsd:positiveInteger;
+    rdfs:isDefinedBy <http://rdf-vocabulary.ddialliance.org/phdd>.
+	
+# recommendedDataType
+phdd:recommendedDataType a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "recommended data type"@en;
+	rdfs:comment "recommended data type"@en;
+    rdfs:domain phdd:ColumnDescription;
+    rdfs:range xsd:string;
+    rdfs:isDefinedBy <http://rdf-vocabulary.ddialliance.org/phdd>.
+
+# decimalPositions
+phdd:decimalPositions a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "decimal positions"@en;
+	rdfs:comment "decimal positions"@en;
+    rdfs:domain phdd:ColumnDescription;
+    rdfs:range xsd:positiveInteger;
+    rdfs:isDefinedBy <http://rdf-vocabulary.ddialliance.org/phdd>.
+	
+# recordNumber
+phdd:recordNumber a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "record number"@en;
+	rdfs:comment "record number"@en;
+    rdfs:domain phdd:ColumnDescription;
+    rdfs:range xsd:positiveInteger;
+    rdfs:isDefinedBy <http://rdf-vocabulary.ddialliance.org/phdd>.
+	
+# startPosition
+phdd:startPosition a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "start position"@en;
+	rdfs:comment "start position"@en;
+    rdfs:domain phdd:ColumnDescription;
+    rdfs:range xsd:positiveInteger;
+    rdfs:isDefinedBy <http://rdf-vocabulary.ddialliance.org/phdd>.
+	
+# endPosition
+phdd:endPosition a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "end position"@en;
+	rdfs:comment "end position"@en;
+    rdfs:domain phdd:ColumnDescription;
+    rdfs:range xsd:positiveInteger;
+    rdfs:isDefinedBy <http://rdf-vocabulary.ddialliance.org/phdd>.
+	
+# width
+phdd:width a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "width"@en;
+	rdfs:comment "width"@en;
+    rdfs:domain phdd:ColumnDescription;
+    rdfs:range xsd:positiveInteger;
     rdfs:isDefinedBy <http://rdf-vocabulary.ddialliance.org/phdd>.
 
 #################################################################
