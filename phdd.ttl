@@ -50,18 +50,18 @@ phdd:Table a rdfs:Class, owl:Class;
 phdd:InputProgram a rdfs:Class, owl:Class;
     rdfs:label "input program"@en;
 	rdfs:comment "input program"@en;
+	rdfs:subClassOf
+	[ a owl:Restriction;
+	  owl:onProperty [owl:inverseOf phdd:inputProgram];
+	  owl:onClass phdd:TableDescription;
+	  owl:maxCardinality 1
+	];
     rdfs:isDefinedBy <http://rdf-vocabulary.ddialliance.org/phdd>.
 	
 # TableDescription
 phdd:TableDescription a rdfs:Class, owl:Class;
     rdfs:label "table description"@en;
 	rdfs:comment "table description"@en;
-	rdfs:subClassOf
-		[ a owl:Restriction;
-          owl:onProperty [owl:inverseOf phdd:inputProgram];
-		  owl:onClass phdd:InputProgram;
-		  owl:maxCardinality 0
-		];
     rdfs:isDefinedBy <http://rdf-vocabulary.ddialliance.org/phdd>.
 	
 # TableStructure
