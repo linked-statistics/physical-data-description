@@ -1,0 +1,1233 @@
+<?xml version="1.0" encoding="UTF-8"?>	
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#">
+     
+    <owl:Ontology rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary">
+        <rdfs:label xml:lang="en">DDI Core Vocabulary</rdfs:label>
+        <rdfs:comment xml:lang="en">This is the DDI Core Vocabulary, an RDF Schema vocabulary that defines foundational concepts For describing the domain of statistics.</rdfs:comment>
+    </owl:Ontology>
+     	
+    <!-- +++++++++++++++ -->
+    <!-- http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#CaptureNewLine -->
+            
+    <!-- UML class -->
+    <owl:Class rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#CaptureNewLine">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates"/>
+        <rdfs:label xml:lang="en">capture new line</rdfs:label>
+    </owl:Class>
+     	
+    <!-- +++++ -->
+        	
+    <!-- +++++++++++++++ -->
+    <!-- http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#CaptureInstruction -->
+            
+    <!-- UML class -->
+    <owl:Class rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#CaptureInstruction">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates"/>
+        <rdfs:label xml:lang="en">capture instruction</rdfs:label>
+    </owl:Class>
+     	
+    <!-- +++++ -->
+        	
+    <!-- +++++++++++++++ -->
+    <!-- http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#Category -->
+            
+    <!-- UML class -->
+    <owl:Class rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#Category">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates"/>
+        <rdfs:label xml:lang="en">category</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#Concept"/>   
+    </owl:Class>
+     
+    <!-- UML association or composition -->
+    <owl:ObjectProperty rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#contains">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates"/>
+        <rdfs:label xml:lang="en">contains</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#Category"/>
+        <rdfs:range rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#CategorySet"/>
+    </owl:ObjectProperty>
+     
+    <!-- UML association or composition -->
+    <owl:ObjectProperty rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#generation">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates"/>
+        <rdfs:label xml:lang="en">generation</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#Category"/>
+        <rdfs:range rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#Generation"/>
+    </owl:ObjectProperty>
+     	
+    <!-- +++++ -->
+        	
+    <!-- +++++++++++++++ -->
+    <!-- http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#CategoryGroup -->
+            
+    <!-- UML class -->
+    <owl:Class rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#CategoryGroup">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates"/>
+        <rdfs:label xml:lang="en">category group</rdfs:label>
+    </owl:Class>
+     	
+    <!-- +++++ -->
+        	
+    <!-- +++++++++++++++ -->
+    <!-- http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#CategorySet -->
+            
+    <!-- UML class -->
+    <owl:Class rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#CategorySet">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates"/>
+        <rdfs:label xml:lang="en">category set</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#Concept"/>   
+    </owl:Class>
+     
+    <!-- UML association or composition -->
+    <owl:ObjectProperty rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#subject">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates"/>
+        <rdfs:label xml:lang="en">subject</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#CategorySet"/>
+        <rdfs:range rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#InternationalValue"/>
+    </owl:ObjectProperty>
+     
+    <!-- UML association or composition -->
+    <owl:ObjectProperty rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#keyword">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates"/>
+        <rdfs:label xml:lang="en">keyword</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#CategorySet"/>
+        <rdfs:range rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#InternationalValue"/>
+    </owl:ObjectProperty>
+     
+    <!-- UML association or composition -->
+    <owl:ObjectProperty rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#categoryGroup">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates"/>
+        <rdfs:label xml:lang="en">category group</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#CategorySet"/>
+        <rdfs:range rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#CategoryGroup"/>
+    </owl:ObjectProperty>
+     	
+    <!-- +++++ -->
+        	
+    <!-- +++++++++++++++ -->
+    <!-- http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#Characteristic -->
+            
+    <!-- UML class -->
+    <owl:Class rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#Characteristic">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates"/>
+        <rdfs:label xml:lang="en">characteristic</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#Concept"/>   
+    </owl:Class>
+     
+    <!-- UML association or composition -->
+    <owl:ObjectProperty rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#weightReference">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates"/>
+        <rdfs:label xml:lang="en">weight reference</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#Characteristic"/>
+        <rdfs:range rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#Weight"/>
+    </owl:ObjectProperty>
+     	
+    <!-- +++++ -->
+        	
+    <!-- +++++++++++++++ -->
+    <!-- http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#Concept -->
+            
+    <!-- UML class -->
+    <owl:Class rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#Concept">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates"/>
+        <rdfs:label xml:lang="en">concept (Abstract)</rdfs:label>
+    </owl:Class>
+     	
+    <!-- UML attribute -->
+    <owl:DatatypeProperty rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#definition">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates"/>
+        <rdfs:label xml:lang="en">definition</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#Concept"/>
+        <rdfs:range rdf:resource="#EAJavaInternationalizedString"/>
+    </owl:DatatypeProperty>
+     
+    <!-- UML association or composition -->
+    <owl:ObjectProperty rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#contains">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates"/>
+        <rdfs:label xml:lang="en">contains</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#Concept"/>
+        <rdfs:range rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#ConceptSystem"/>
+    </owl:ObjectProperty>
+     
+    <!-- UML association or composition -->
+    <owl:ObjectProperty rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#contains">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates"/>
+        <rdfs:label xml:lang="en">contains</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#Concept"/>
+        <rdfs:range rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#Designation"/>
+    </owl:ObjectProperty>
+     
+    <!-- UML association or composition -->
+    <owl:ObjectProperty rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#contains">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates"/>
+        <rdfs:label xml:lang="en">contains</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#Concept"/>
+        <rdfs:range rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#Label"/>
+    </owl:ObjectProperty>
+     	
+    <!-- source cardinality -->
+    <rdf:Description rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#Designation">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#contains"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:onClass rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#Concept"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:minCardinality>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+     	
+    <!-- source cardinality -->
+    <rdf:Description rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#Label">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#contains"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:onClass rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#Concept"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+     	
+    <!-- target cardinality -->
+    <rdf:Description rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#Concept">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#contains"/>
+                <owl:onClass rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#Designation"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+     	
+    <!-- target cardinality -->
+    <rdf:Description rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#Concept">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#contains"/>
+                <owl:onClass rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#Label"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:minCardinality>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+     	
+    <!-- +++++ -->
+        	
+    <!-- +++++++++++++++ -->
+    <!-- http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#ConceptScheme -->
+            
+    <!-- UML class -->
+    <owl:Class rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#ConceptScheme">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates"/>
+        <rdfs:label xml:lang="en">concept scheme</rdfs:label>
+    </owl:Class>
+     	
+    <!-- +++++ -->
+        	
+    <!-- +++++++++++++++ -->
+    <!-- http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#ConceptSystem -->
+            
+    <!-- UML class -->
+    <owl:Class rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#ConceptSystem">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates"/>
+        <rdfs:label xml:lang="en">concept system (Abstract)</rdfs:label>
+    </owl:Class>
+     	
+    <!-- UML attribute -->
+    <owl:DatatypeProperty rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#definition">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates"/>
+        <rdfs:label xml:lang="en">definition</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#ConceptSystem"/>
+        <rdfs:range rdf:resource="#EAJavaInternationalizedString"/>
+    </owl:DatatypeProperty>
+     	
+    <!-- +++++ -->
+        	
+    <!-- +++++++++++++++ -->
+    <!-- http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#ConceptualVariable -->
+            
+    <!-- UML class -->
+    <owl:Class rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#ConceptualVariable">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates"/>
+        <rdfs:label xml:lang="en">conceptual variable</rdfs:label>
+    </owl:Class>
+     
+    <!-- UML association or composition -->
+    <owl:ObjectProperty rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#measuresUniverse">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates"/>
+        <rdfs:label xml:lang="en">measures universe</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#ConceptualVariable"/>
+        <rdfs:range rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#Universe"/>
+    </owl:ObjectProperty>
+     
+    <!-- UML association or composition -->
+    <owl:ObjectProperty rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#characteristic">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates"/>
+        <rdfs:label xml:lang="en">characteristic</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#ConceptualVariable"/>
+        <rdfs:range rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#Characteristic"/>
+    </owl:ObjectProperty>
+     	
+    <!-- source cardinality -->
+    <rdf:Description rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#Characteristic">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#characteristic"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:onClass rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#ConceptualVariable"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+     	
+    <!-- target cardinality -->
+    <rdf:Description rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#ConceptualVariable">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#characteristic"/>
+                <owl:onClass rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#Characteristic"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:minCardinality>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+     	
+    <!-- +++++ -->
+        	
+    <!-- +++++++++++++++ -->
+    <!-- http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#DataFile -->
+            
+    <!-- UML class -->
+    <owl:Class rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#DataFile">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates"/>
+        <rdfs:label xml:lang="en">data file</rdfs:label>
+    </owl:Class>
+     	
+    <!-- UML attribute -->
+    <owl:DatatypeProperty rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#fileDescription">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates"/>
+        <rdfs:label xml:lang="en">file description</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#DataFile"/>
+        <rdfs:range rdf:resource="#"/>
+    </owl:DatatypeProperty>
+     	
+    <!-- UML attribute -->
+    <owl:DatatypeProperty rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#fileName">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates"/>
+        <rdfs:label xml:lang="en">file name</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#DataFile"/>
+        <rdfs:range rdf:resource="#"/>
+    </owl:DatatypeProperty>
+     	
+    <!-- UML attribute -->
+    <owl:DatatypeProperty rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#mediaType">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates"/>
+        <rdfs:label xml:lang="en">media type</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#DataFile"/>
+        <rdfs:range rdf:resource="#"/>
+    </owl:DatatypeProperty>
+     	
+    <!-- +++++ -->
+        	
+    <!-- +++++++++++++++ -->
+    <!-- http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#Designation -->
+            
+    <!-- UML class -->
+    <owl:Class rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#Designation">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates"/>
+        <rdfs:label xml:lang="en">designation</rdfs:label>
+    </owl:Class>
+     	
+    <!-- UML attribute -->
+    <owl:DatatypeProperty rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#language">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates"/>
+        <rdfs:label xml:lang="en">language</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#Designation"/>
+        <rdfs:range rdf:resource="#EAJavastring"/>
+    </owl:DatatypeProperty>
+     
+    <!-- UML association or composition -->
+    <owl:ObjectProperty rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#contains">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates"/>
+        <rdfs:label xml:lang="en">contains</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#Designation"/>
+        <rdfs:range rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#Sign"/>
+    </owl:ObjectProperty>
+     
+    <!-- UML association or composition -->
+    <owl:ObjectProperty rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#contains">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates"/>
+        <rdfs:label xml:lang="en">contains</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#Designation"/>
+        <rdfs:range rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#Vocabulary"/>
+    </owl:ObjectProperty>
+     	
+    <!-- source cardinality -->
+    <rdf:Description rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#Sign">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#contains"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:onClass rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#Designation"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+     	
+    <!-- source cardinality -->
+    <rdf:Description rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#Vocabulary">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#contains"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:onClass rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#Designation"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+     	
+    <!-- target cardinality -->
+    <rdf:Description rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#Designation">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#contains"/>
+                <owl:onClass rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#Sign"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:minCardinality>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+     	
+    <!-- target cardinality -->
+    <rdf:Description rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#Designation">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#contains"/>
+                <owl:onClass rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#Vocabulary"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:minCardinality>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+     	
+    <!-- +++++ -->
+        	
+    <!-- +++++++++++++++ -->
+    <!-- http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#Field -->
+            
+    <!-- UML class -->
+    <owl:Class rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#Field">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates"/>
+        <rdfs:label xml:lang="en">field</rdfs:label>
+    </owl:Class>
+     
+    <!-- UML association or composition -->
+    <owl:ObjectProperty rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#label">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates"/>
+        <rdfs:label xml:lang="en">label</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#Field"/>
+        <rdfs:range rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#Label"/>
+    </owl:ObjectProperty>
+     	
+    <!-- source cardinality -->
+    <rdf:Description rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#Label">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#label"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:onClass rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#Field"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:minCardinality>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+     	
+    <!-- target cardinality -->
+    <rdf:Description rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#Field">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#label"/>
+                <owl:onClass rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#Label"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+     	
+    <!-- +++++ -->
+        	
+    <!-- +++++++++++++++ -->
+    <!-- http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#Generation -->
+            
+    <!-- UML class -->
+    <owl:Class rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#Generation">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates"/>
+        <rdfs:label xml:lang="en">generation</rdfs:label>
+    </owl:Class>
+     	
+    <!-- +++++ -->
+        	
+    <!-- +++++++++++++++ -->
+    <!-- http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#InstanceVariable -->
+            
+    <!-- UML class -->
+    <owl:Class rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#InstanceVariable">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates"/>
+        <rdfs:label xml:lang="en">instance variable</rdfs:label>
+    </owl:Class>
+     
+    <!-- UML association or composition -->
+    <owl:ObjectProperty rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#usageOfRepresentedVariable">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates"/>
+        <rdfs:label xml:lang="en">usage of represented variable</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#InstanceVariable"/>
+        <rdfs:range rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#RepresentedVariable"/>
+    </owl:ObjectProperty>
+     	
+    <!-- target cardinality -->
+    <rdf:Description rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#InstanceVariable">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#usageOfRepresentedVariable"/>
+                <owl:onClass rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#RepresentedVariable"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:minCardinality>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+     	
+    <!-- +++++ -->
+        	
+    <!-- +++++++++++++++ -->
+    <!-- http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#Instrument -->
+            
+    <!-- UML class -->
+    <owl:Class rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#Instrument">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates"/>
+        <rdfs:label xml:lang="en">instrument</rdfs:label>
+    </owl:Class>
+     	
+    <!-- UML attribute -->
+    <owl:DatatypeProperty rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#mode">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates"/>
+        <rdfs:label xml:lang="en">mode</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#Instrument"/>
+        <rdfs:range rdf:resource="#EAJavaCV"/>
+    </owl:DatatypeProperty>
+     
+    <!-- UML association or composition -->
+    <owl:ObjectProperty rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#isBeingAdministeredBy">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates"/>
+        <rdfs:label xml:lang="en">is being administered by</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#Instrument"/>
+        <rdfs:range rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#StudyDesign"/>
+    </owl:ObjectProperty>
+     	
+    <!-- +++++ -->
+        	
+    <!-- +++++++++++++++ -->
+    <!-- http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#InstrumentControl -->
+            
+    <!-- UML class -->
+    <owl:Class rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#InstrumentControl">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates"/>
+        <rdfs:label xml:lang="en">instrument control</rdfs:label>
+    </owl:Class>
+     	
+    <!-- UML attribute -->
+    <owl:DatatypeProperty rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#type">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates"/>
+        <rdfs:label xml:lang="en">type</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#InstrumentControl"/>
+        <rdfs:range rdf:resource="#EAJavaCV"/>
+    </owl:DatatypeProperty>
+     
+    <!-- UML association or composition -->
+    <owl:ObjectProperty rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#belongsToInstrument">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates"/>
+        <rdfs:label xml:lang="en">belongs to instrument</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#InstrumentControl"/>
+        <rdfs:range rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#Instrument"/>
+    </owl:ObjectProperty>
+     
+    <!-- UML association or composition -->
+    <owl:ObjectProperty rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#hasStatement">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates"/>
+        <rdfs:label xml:lang="en">has statement</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#InstrumentControl"/>
+        <rdfs:range rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#Statement"/>
+    </owl:ObjectProperty>
+     
+    <!-- UML association or composition -->
+    <owl:ObjectProperty rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#hasCaptureInstruction">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates"/>
+        <rdfs:label xml:lang="en">has capture instruction</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#InstrumentControl"/>
+        <rdfs:range rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#CaptureInstruction"/>
+    </owl:ObjectProperty>
+     
+    <!-- UML association or composition -->
+    <owl:ObjectProperty rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#hasCapture">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates"/>
+        <rdfs:label xml:lang="en">has capture</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#InstrumentControl"/>
+        <rdfs:range rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#CaptureNewLine"/>
+    </owl:ObjectProperty>
+     	
+    <!-- +++++ -->
+        	
+    <!-- +++++++++++++++ -->
+    <!-- http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#InternationalValue -->
+            
+    <!-- UML class -->
+    <owl:Class rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#InternationalValue">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates"/>
+        <rdfs:label xml:lang="en">international value</rdfs:label>
+    </owl:Class>
+     	
+    <!-- +++++ -->
+        	
+    <!-- +++++++++++++++ -->
+    <!-- http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#Label -->
+            
+    <!-- UML class -->
+    <owl:Class rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#Label">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates"/>
+        <rdfs:label xml:lang="en">label</rdfs:label>
+    </owl:Class>
+     	
+    <!-- UML attribute -->
+    <owl:DatatypeProperty rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#value">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates"/>
+        <rdfs:label xml:lang="en">value</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#Label"/>
+        <rdfs:range rdf:resource="#EAJavaInternationalizedString"/>
+    </owl:DatatypeProperty>
+     	
+    <!-- +++++ -->
+        	
+    <!-- +++++++++++++++ -->
+    <!-- http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#Question -->
+            
+    <!-- UML class -->
+    <owl:Class rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#Question">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates"/>
+        <rdfs:label xml:lang="en">question</rdfs:label>
+    </owl:Class>
+     	
+    <!-- UML attribute -->
+    <owl:DatatypeProperty rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#text">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates"/>
+        <rdfs:label xml:lang="en">text</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#Question"/>
+        <rdfs:range rdf:resource="#EAJavastring"/>
+    </owl:DatatypeProperty>
+     
+    <!-- UML association or composition -->
+    <owl:ObjectProperty rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#isCapture">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates"/>
+        <rdfs:label xml:lang="en">is capture</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#Question"/>
+        <rdfs:range rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#CaptureNewLine"/>
+    </owl:ObjectProperty>
+     	
+    <!-- +++++ -->
+        	
+    <!-- +++++++++++++++ -->
+    <!-- http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#QuestionBlock -->
+            
+    <!-- UML class -->
+    <owl:Class rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#QuestionBlock">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates"/>
+        <rdfs:label xml:lang="en">question block</rdfs:label>
+    </owl:Class>
+     	
+    <!-- UML attribute -->
+    <owl:DatatypeProperty rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#text">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates"/>
+        <rdfs:label xml:lang="en">text</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#QuestionBlock"/>
+        <rdfs:range rdf:resource="#EAJavastring"/>
+    </owl:DatatypeProperty>
+     
+    <!-- UML association or composition -->
+    <owl:ObjectProperty rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#hasQuestion">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates"/>
+        <rdfs:label xml:lang="en">has question</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#QuestionBlock"/>
+        <rdfs:range rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#Question"/>
+    </owl:ObjectProperty>
+     
+    <!-- UML association or composition -->
+    <owl:ObjectProperty rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#isCapture">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates"/>
+        <rdfs:label xml:lang="en">is capture</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#QuestionBlock"/>
+        <rdfs:range rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#CaptureNewLine"/>
+    </owl:ObjectProperty>
+     	
+    <!-- +++++ -->
+        	
+    <!-- +++++++++++++++ -->
+    <!-- http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#RecordLayout -->
+            
+    <!-- UML class -->
+    <owl:Class rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#RecordLayout">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates"/>
+        <rdfs:label xml:lang="en">record layout</rdfs:label>
+    </owl:Class>
+     	
+    <!-- UML attribute -->
+    <owl:DatatypeProperty rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#decimalSymbol">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates"/>
+        <rdfs:label xml:lang="en">decimal symbol</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#RecordLayout"/>
+        <rdfs:range rdf:resource="#"/>
+    </owl:DatatypeProperty>
+     	
+    <!-- UML attribute -->
+    <owl:DatatypeProperty rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#defaultLanguageOfData">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates"/>
+        <rdfs:label xml:lang="en">default language of data</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#RecordLayout"/>
+        <rdfs:range rdf:resource="#EAJavastring"/>
+    </owl:DatatypeProperty>
+     	
+    <!-- UML attribute -->
+    <owl:DatatypeProperty rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#defaultLocaleOfData">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates"/>
+        <rdfs:label xml:lang="en">default locale of data</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#RecordLayout"/>
+        <rdfs:range rdf:resource="#"/>
+    </owl:DatatypeProperty>
+     	
+    <!-- UML attribute -->
+    <owl:DatatypeProperty rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#fieldDelimiter">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates"/>
+        <rdfs:label xml:lang="en">field delimiter</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#RecordLayout"/>
+        <rdfs:range rdf:resource="#"/>
+    </owl:DatatypeProperty>
+     	
+    <!-- UML attribute -->
+    <owl:DatatypeProperty rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#fieldNamesOnFirstRow">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates"/>
+        <rdfs:label xml:lang="en">field names on first row</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#RecordLayout"/>
+        <rdfs:range rdf:resource="#EAJavaboolean"/>
+    </owl:DatatypeProperty>
+     	
+    <!-- UML attribute -->
+    <owl:DatatypeProperty rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#newline">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates"/>
+        <rdfs:label xml:lang="en">newline</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#RecordLayout"/>
+        <rdfs:range rdf:resource="#EAJavaenum"/>
+    </owl:DatatypeProperty>
+     	
+    <!-- UML attribute -->
+    <owl:DatatypeProperty rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#textQualifier">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates"/>
+        <rdfs:label xml:lang="en">text qualifier</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#RecordLayout"/>
+        <rdfs:range rdf:resource="#"/>
+    </owl:DatatypeProperty>
+     
+    <!-- UML association or composition -->
+    <owl:ObjectProperty rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#contains">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates"/>
+        <rdfs:label xml:lang="en">contains</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#RecordLayout"/>
+        <rdfs:range rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#Label"/>
+    </owl:ObjectProperty>
+     
+    <!-- UML association or composition -->
+    <owl:ObjectProperty rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#hasFields">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates"/>
+        <rdfs:label xml:lang="en">has fields</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#RecordLayout"/>
+        <rdfs:range rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#Field"/>
+    </owl:ObjectProperty>
+     	
+    <!-- source cardinality -->
+    <rdf:Description rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#Label">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#contains"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:onClass rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#RecordLayout"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:minCardinality>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+     	
+    <!-- source cardinality -->
+    <rdf:Description rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#Field">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#hasFields"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:onClass rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#RecordLayout"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:minCardinality>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+     	
+    <!-- target cardinality -->
+    <rdf:Description rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#RecordLayout">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#contains"/>
+                <owl:onClass rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#Label"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+     	
+    <!-- target cardinality -->
+    <rdf:Description rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#RecordLayout">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#hasFields"/>
+                <owl:onClass rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#Field"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+     	
+    <!-- +++++ -->
+        	
+    <!-- +++++++++++++++ -->
+    <!-- http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#RectangularDataFile -->
+            
+    <!-- UML class -->
+    <owl:Class rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#RectangularDataFile">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates"/>
+        <rdfs:label xml:lang="en">rectangular data file</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#DataFile"/>   
+    </owl:Class>
+     	
+    <!-- UML attribute -->
+    <owl:DatatypeProperty rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#defaultDecimalSymbol">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates"/>
+        <rdfs:label xml:lang="en">default decimal symbol</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#RectangularDataFile"/>
+        <rdfs:range rdf:resource="#"/>
+    </owl:DatatypeProperty>
+     	
+    <!-- UML attribute -->
+    <owl:DatatypeProperty rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#defaultLanguageOfData">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates"/>
+        <rdfs:label xml:lang="en">default language of data</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#RectangularDataFile"/>
+        <rdfs:range rdf:resource="#EAJavastring"/>
+    </owl:DatatypeProperty>
+     	
+    <!-- UML attribute -->
+    <owl:DatatypeProperty rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#defaultLocaleOfData">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates"/>
+        <rdfs:label xml:lang="en">default locale of data</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#RectangularDataFile"/>
+        <rdfs:range rdf:resource="#"/>
+    </owl:DatatypeProperty>
+     	
+    <!-- UML attribute -->
+    <owl:DatatypeProperty rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#defaultTextQualifier">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates"/>
+        <rdfs:label xml:lang="en">default text qualifier</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#RectangularDataFile"/>
+        <rdfs:range rdf:resource="#"/>
+    </owl:DatatypeProperty>
+     	
+    <!-- UML attribute -->
+    <owl:DatatypeProperty rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#fieldNamesOnFirstRow">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates"/>
+        <rdfs:label xml:lang="en">field names on first row</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#RectangularDataFile"/>
+        <rdfs:range rdf:resource="#EAJavaboolean"/>
+    </owl:DatatypeProperty>
+     	
+    <!-- UML attribute -->
+    <owl:DatatypeProperty rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#newline">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates"/>
+        <rdfs:label xml:lang="en">newline</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#RectangularDataFile"/>
+        <rdfs:range rdf:resource="#EAJavaenum"/>
+    </owl:DatatypeProperty>
+     
+    <!-- UML association or composition -->
+    <owl:ObjectProperty rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#label">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates"/>
+        <rdfs:label xml:lang="en">label</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#RectangularDataFile"/>
+        <rdfs:range rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#Label"/>
+    </owl:ObjectProperty>
+     
+    <!-- UML association or composition -->
+    <owl:ObjectProperty rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#hasrecordLayout">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates"/>
+        <rdfs:label xml:lang="en">hasrecord layout</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#RectangularDataFile"/>
+        <rdfs:range rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#RecordLayout"/>
+    </owl:ObjectProperty>
+     	
+    <!-- source cardinality -->
+    <rdf:Description rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#Label">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#label"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:onClass rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#RectangularDataFile"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:minCardinality>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+     	
+    <!-- source cardinality -->
+    <rdf:Description rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#RecordLayout">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#hasrecordLayout"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:onClass rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#RectangularDataFile"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:minCardinality>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+     	
+    <!-- target cardinality -->
+    <rdf:Description rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#RectangularDataFile">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#label"/>
+                <owl:onClass rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#Label"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+     	
+    <!-- target cardinality -->
+    <rdf:Description rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#RectangularDataFile">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#hasrecordLayout"/>
+                <owl:onClass rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#RecordLayout"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+     	
+    <!-- +++++ -->
+        	
+    <!-- +++++++++++++++ -->
+    <!-- http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#RepresentedVariable -->
+            
+    <!-- UML class -->
+    <owl:Class rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#RepresentedVariable">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates"/>
+        <rdfs:label xml:lang="en">represented variable</rdfs:label>
+    </owl:Class>
+     
+    <!-- UML association or composition -->
+    <owl:ObjectProperty rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#instanceVariable">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates"/>
+        <rdfs:label xml:lang="en">instance variable</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#RepresentedVariable"/>
+        <rdfs:range rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#ConceptualVariable"/>
+    </owl:ObjectProperty>
+     	
+    <!-- target cardinality -->
+    <rdf:Description rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#RepresentedVariable">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#instanceVariable"/>
+                <owl:onClass rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#ConceptualVariable"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:minCardinality>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+     	
+    <!-- +++++ -->
+        	
+    <!-- +++++++++++++++ -->
+    <!-- http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#Sign -->
+            
+    <!-- UML class -->
+    <owl:Class rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#Sign">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates"/>
+        <rdfs:label xml:lang="en">sign</rdfs:label>
+    </owl:Class>
+     	
+    <!-- UML attribute -->
+    <owl:DatatypeProperty rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#value">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates"/>
+        <rdfs:label xml:lang="en">value</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#Sign"/>
+        <rdfs:range rdf:resource="#EAJavaInternationalizedString"/>
+    </owl:DatatypeProperty>
+     	
+    <!-- +++++ -->
+        	
+    <!-- +++++++++++++++ -->
+    <!-- http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#Statement -->
+            
+    <!-- UML class -->
+    <owl:Class rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#Statement">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates"/>
+        <rdfs:label xml:lang="en">statement</rdfs:label>
+    </owl:Class>
+     	
+    <!-- +++++ -->
+        	
+    <!-- +++++++++++++++ -->
+    <!-- http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#StudyDesign -->
+            
+    <!-- UML class -->
+    <owl:Class rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#StudyDesign">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates"/>
+        <rdfs:label xml:lang="en">study design</rdfs:label>
+    </owl:Class>
+     	
+    <!-- UML attribute -->
+    <owl:DatatypeProperty rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#objective">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates"/>
+        <rdfs:label xml:lang="en">objective</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#StudyDesign"/>
+        <rdfs:range rdf:resource="#EAJavastring"/>
+    </owl:DatatypeProperty>
+     	
+    <!-- +++++ -->
+        	
+    <!-- +++++++++++++++ -->
+    <!-- http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#Universe -->
+            
+    <!-- UML class -->
+    <owl:Class rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#Universe">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates"/>
+        <rdfs:label xml:lang="en">universe</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#Concept"/>   
+    </owl:Class>
+     	
+    <!-- +++++ -->
+        	
+    <!-- +++++++++++++++ -->
+    <!-- http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#ValueDomain -->
+            
+    <!-- UML class -->
+    <owl:Class rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#ValueDomain">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates"/>
+        <rdfs:label xml:lang="en">value domain</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#ConceptScheme"/>   
+    </owl:Class>
+     	
+    <!-- UML attribute -->
+    <owl:DatatypeProperty rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#additivity">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates"/>
+        <rdfs:label xml:lang="en">additivity</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#ValueDomain"/>
+        <rdfs:range rdf:resource="#EAJavaControlledvocabulary"/>
+    </owl:DatatypeProperty>
+     	
+    <!-- UML attribute -->
+    <owl:DatatypeProperty rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#intendedDataType">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates"/>
+        <rdfs:label xml:lang="en">intended data type</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#ValueDomain"/>
+        <rdfs:range rdf:resource="#EAJavaControlledvocabulary"/>
+    </owl:DatatypeProperty>
+     	
+    <!-- UML attribute -->
+    <owl:DatatypeProperty rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#multiplier">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates"/>
+        <rdfs:label xml:lang="en">multiplier</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#ValueDomain"/>
+        <rdfs:range rdf:resource="#EAJavadecimal"/>
+    </owl:DatatypeProperty>
+     	
+    <!-- UML attribute -->
+    <owl:DatatypeProperty rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#numericPrecision">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates"/>
+        <rdfs:label xml:lang="en">numeric precision</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#ValueDomain"/>
+        <rdfs:range rdf:resource="#EAJavadecimal"/>
+    </owl:DatatypeProperty>
+     	
+    <!-- UML attribute -->
+    <owl:DatatypeProperty rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#unitOfMeasurement">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates"/>
+        <rdfs:label xml:lang="en">unit of measurement</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#ValueDomain"/>
+        <rdfs:range rdf:resource="#EAJavastring"/>
+    </owl:DatatypeProperty>
+     
+    <!-- UML association or composition -->
+    <owl:ObjectProperty rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#isRepresentedBy">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates"/>
+        <rdfs:label xml:lang="en">is represented by</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#ValueDomain"/>
+        <rdfs:range rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#RepresentedVariable"/>
+    </owl:ObjectProperty>
+     	
+    <!-- +++++ -->
+        	
+    <!-- +++++++++++++++ -->
+    <!-- http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#Vocabulary -->
+            
+    <!-- UML class -->
+    <owl:Class rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#Vocabulary">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates"/>
+        <rdfs:label xml:lang="en">vocabulary</rdfs:label>
+    </owl:Class>
+     	
+    <!-- UML attribute -->
+    <owl:DatatypeProperty rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#source">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates"/>
+        <rdfs:label xml:lang="en">source</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#Vocabulary"/>
+        <rdfs:range rdf:resource="#"/>
+    </owl:DatatypeProperty>
+     	
+    <!-- +++++ -->
+        	
+    <!-- +++++++++++++++ -->
+    <!-- http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#Weight -->
+            
+    <!-- UML class -->
+    <owl:Class rdf:about="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates#Weight">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/DDICoreVocabulary/Word%20templates"/>
+        <rdfs:label xml:lang="en">weight</rdfs:label>
+    </owl:Class>
+     	
+    <!-- +++++ -->
+        	
+</rdf:RDF>
