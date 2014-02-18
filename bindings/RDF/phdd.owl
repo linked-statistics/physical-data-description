@@ -1,0 +1,726 @@
+<?xml version="1.0" encoding="UTF-8"?>	
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#">
+     
+    <owl:Ontology rdf:about="http://rdf-vocabulary.ddialliance.org/phdd">
+        <rdfs:label xml:lang="en">DDI Core Vocabulary</rdfs:label>
+        <rdfs:comment xml:lang="en">This is the DDI Core Vocabulary, an RDF Schema vocabulary that defines foundational concepts For describing the domain of statistics.</rdfs:comment>
+    </owl:Ontology>
+     	
+    <!-- +++++++++++++++ -->
+    <!-- http://rdf-vocabulary.ddialliance.org/phdd/Dcat#Catalog -->
+            
+    <!-- UML class -->
+    <owl:Class rdf:about="http://rdf-vocabulary.ddialliance.org/phdd/Dcat#Catalog">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Dcat"/>
+        <rdfs:label xml:lang="en">catalog</rdfs:label>
+    </owl:Class>
+     
+    <!-- UML association or composition -->
+    <owl:ObjectProperty rdf:about="http://rdf-vocabulary.ddialliance.org/phdd/Dcat#dcat:dataset">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Dcat"/>
+        <rdfs:label xml:lang="en">dcat:dataset</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Dcat#Catalog"/>
+        <rdfs:range rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Dcat#Dataset"/>
+    </owl:ObjectProperty>
+     	
+    <!-- +++++ -->
+        	
+    <!-- +++++++++++++++ -->
+    <!-- http://rdf-vocabulary.ddialliance.org/phdd/Dcat#Dataset -->
+            
+    <!-- UML class -->
+    <owl:Class rdf:about="http://rdf-vocabulary.ddialliance.org/phdd/Dcat#Dataset">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Dcat"/>
+        <rdfs:label xml:lang="en">dataset</rdfs:label>
+    </owl:Class>
+     
+    <!-- UML association or composition -->
+    <owl:ObjectProperty rdf:about="http://rdf-vocabulary.ddialliance.org/phdd/Dcat#dcat:distribution">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Dcat"/>
+        <rdfs:label xml:lang="en">dcat:distribution</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Dcat#Dataset"/>
+        <rdfs:range rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Dcat#Distribution"/>
+    </owl:ObjectProperty>
+     	
+    <!-- +++++ -->
+        	
+    <!-- +++++++++++++++ -->
+    <!-- http://rdf-vocabulary.ddialliance.org/phdd/Dcat#Distribution -->
+            
+    <!-- UML class -->
+    <owl:Class rdf:about="http://rdf-vocabulary.ddialliance.org/phdd/Dcat#Distribution">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Dcat"/>
+        <rdfs:label xml:lang="en">distribution</rdfs:label>
+    </owl:Class>
+     	
+    <!-- +++++ -->
+        	
+    <!-- +++++++++++++++ -->
+    <!-- http://rdf-vocabulary.ddialliance.org/phdd/Disco#DataFile -->
+            
+    <!-- UML class -->
+    <owl:Class rdf:about="http://rdf-vocabulary.ddialliance.org/phdd/Disco#DataFile">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Disco"/>
+        <rdfs:label xml:lang="en">data file</rdfs:label>
+    </owl:Class>
+     	
+    <!-- +++++ -->
+        	
+    <!-- +++++++++++++++ -->
+    <!-- http://rdf-vocabulary.ddialliance.org/phdd/Disco#LogicalDataSet -->
+            
+    <!-- UML class -->
+    <owl:Class rdf:about="http://rdf-vocabulary.ddialliance.org/phdd/Disco#LogicalDataSet">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Disco"/>
+        <rdfs:label xml:lang="en">logical data set</rdfs:label>
+    </owl:Class>
+     
+    <!-- UML association or composition -->
+    <owl:ObjectProperty rdf:about="http://rdf-vocabulary.ddialliance.org/phdd/Disco#disco:dataFile">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Disco"/>
+        <rdfs:label xml:lang="en">disco:data file</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Disco#LogicalDataSet"/>
+        <rdfs:range rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Disco#DataFile"/>
+    </owl:ObjectProperty>
+     
+    <!-- UML association or composition -->
+    <owl:ObjectProperty rdf:about="http://rdf-vocabulary.ddialliance.org/phdd/Disco#disco:containsVariable">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Disco"/>
+        <rdfs:label xml:lang="en">disco:contains variable</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Disco#LogicalDataSet"/>
+        <rdfs:range rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Disco#Variable"/>
+    </owl:ObjectProperty>
+     	
+    <!-- +++++ -->
+        	
+    <!-- +++++++++++++++ -->
+    <!-- http://rdf-vocabulary.ddialliance.org/phdd/Disco#Variable -->
+            
+    <!-- UML class -->
+    <owl:Class rdf:about="http://rdf-vocabulary.ddialliance.org/phdd/Disco#Variable">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Disco"/>
+        <rdfs:label xml:lang="en">variable</rdfs:label>
+    </owl:Class>
+     	
+    <!-- +++++ -->
+        	
+    <!-- +++++++++++++++ -->
+    <!-- http://rdf-vocabulary.ddialliance.org/phdd/Phdd#Column -->
+            
+    <!-- UML class -->
+    <owl:Class rdf:about="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#Column">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd"/>
+        <rdfs:label xml:lang="en">column</rdfs:label>
+    </owl:Class>
+     
+    <!-- UML association or composition -->
+    <owl:ObjectProperty rdf:about="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#isDescribedBy">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd"/>
+        <rdfs:label xml:lang="en">is described by</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#Column"/>
+        <rdfs:range rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#ColumnDescription"/>
+    </owl:ObjectProperty>
+     	
+    <!-- target cardinality -->
+    <rdf:Description rdf:about="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#Column">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#isDescribedBy"/>
+                <owl:onClass rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#ColumnDescription"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:minCardinality>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+     	
+    <!-- +++++ -->
+        	
+    <!-- +++++++++++++++ -->
+    <!-- http://rdf-vocabulary.ddialliance.org/phdd/Phdd#ColumnDescription -->
+            
+    <!-- UML class -->
+    <owl:Class rdf:about="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#ColumnDescription">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd"/>
+        <rdfs:label xml:lang="en">column description</rdfs:label>
+    </owl:Class>
+     	
+    <!-- UML attribute -->
+    <owl:DatatypeProperty rdf:about="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#decimalPositions">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd"/>
+        <rdfs:label xml:lang="en">decimal positions</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#ColumnDescription"/>
+        <rdfs:range rdf:resource="#EAJavaxsdpositiveInteger"/>
+    </owl:DatatypeProperty>
+     	
+    <!-- UML attribute -->
+    <owl:DatatypeProperty rdf:about="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#recommendedDataType">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd"/>
+        <rdfs:label xml:lang="en">recommended data type</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#ColumnDescription"/>
+        <rdfs:range rdf:resource="#EAJavaxsdstring"/>
+    </owl:DatatypeProperty>
+     	
+    <!-- UML attribute -->
+    <owl:DatatypeProperty rdf:about="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#recommendedDisplayDataFormat">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd"/>
+        <rdfs:label xml:lang="en">recommended display data format</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#ColumnDescription"/>
+        <rdfs:range rdf:resource="#EAJavaxsdstring"/>
+    </owl:DatatypeProperty>
+     	
+    <!-- UML attribute -->
+    <owl:DatatypeProperty rdf:about="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#recordNumber">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd"/>
+        <rdfs:label xml:lang="en">record number</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#ColumnDescription"/>
+        <rdfs:range rdf:resource="#EAJavaxsdpositiveInteger"/>
+    </owl:DatatypeProperty>
+     	
+    <!-- UML attribute -->
+    <owl:DatatypeProperty rdf:about="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#storageFormat">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd"/>
+        <rdfs:label xml:lang="en">storage format</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#ColumnDescription"/>
+        <rdfs:range rdf:resource="#EAJavaxsdstring"/>
+    </owl:DatatypeProperty>
+     
+    <!-- UML association or composition -->
+    <owl:ObjectProperty rdf:about="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#storageFormat">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd"/>
+        <rdfs:label xml:lang="en">storage format</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#ColumnDescription"/>
+        <rdfs:range rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Skos#Skos:Concept"/>
+    </owl:ObjectProperty>
+     
+    <!-- UML association or composition -->
+    <owl:ObjectProperty rdf:about="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#recommendedDisplayDataFormat">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd"/>
+        <rdfs:label xml:lang="en">recommended display data format</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#ColumnDescription"/>
+        <rdfs:range rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Skos#Skos:Concept"/>
+    </owl:ObjectProperty>
+     	
+    <!-- target cardinality -->
+    <rdf:Description rdf:about="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#ColumnDescription">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#storageFormat"/>
+                <owl:onClass rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Skos#Skos:Concept"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+     	
+    <!-- target cardinality -->
+    <rdf:Description rdf:about="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#ColumnDescription">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#recommendedDisplayDataFormat"/>
+                <owl:onClass rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Skos#Skos:Concept"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+     	
+    <!-- +++++ -->
+        	
+    <!-- +++++++++++++++ -->
+    <!-- http://rdf-vocabulary.ddialliance.org/phdd/Phdd#Delimited -->
+            
+    <!-- UML class -->
+    <owl:Class rdf:about="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#Delimited">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd"/>
+        <rdfs:label xml:lang="en">delimited</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#TableStructure"/>   
+    </owl:Class>
+     	
+    <!-- UML attribute -->
+    <owl:DatatypeProperty rdf:about="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#consecutiveDelimitersAsOne">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd"/>
+        <rdfs:label xml:lang="en">consecutive delimiters as one</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#Delimited"/>
+        <rdfs:range rdf:resource="#EAJavaxsdboolean"/>
+    </owl:DatatypeProperty>
+     	
+    <!-- UML attribute -->
+    <owl:DatatypeProperty rdf:about="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#delimiter">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd"/>
+        <rdfs:label xml:lang="en">delimiter</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#Delimited"/>
+        <rdfs:range rdf:resource="#EAJavaxsdstring"/>
+    </owl:DatatypeProperty>
+     	
+    <!-- UML attribute -->
+    <owl:DatatypeProperty rdf:about="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#firstDataLine">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd"/>
+        <rdfs:label xml:lang="en">first data line</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#Delimited"/>
+        <rdfs:range rdf:resource="#EAJavaxsdpositiveInteger"/>
+    </owl:DatatypeProperty>
+     	
+    <!-- UML attribute -->
+    <owl:DatatypeProperty rdf:about="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#namesOnFirstRow">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd"/>
+        <rdfs:label xml:lang="en">names on first row</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#Delimited"/>
+        <rdfs:range rdf:resource="#EAJavaxsdboolean"/>
+    </owl:DatatypeProperty>
+     	
+    <!-- UML attribute -->
+    <owl:DatatypeProperty rdf:about="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#textQualifier">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd"/>
+        <rdfs:label xml:lang="en">text qualifier</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#Delimited"/>
+        <rdfs:range rdf:resource="#EAJavaxsdstring"/>
+    </owl:DatatypeProperty>
+     	
+    <!-- +++++ -->
+        	
+    <!-- +++++++++++++++ -->
+    <!-- http://rdf-vocabulary.ddialliance.org/phdd/Phdd#DelimitedColumnDescription -->
+            
+    <!-- UML class -->
+    <owl:Class rdf:about="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#DelimitedColumnDescription">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd"/>
+        <rdfs:label xml:lang="en">delimited column description</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#ColumnDescription"/>   
+    </owl:Class>
+     	
+    <!-- UML attribute -->
+    <owl:DatatypeProperty rdf:about="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#columnPosition">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd"/>
+        <rdfs:label xml:lang="en">column position</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#DelimitedColumnDescription"/>
+        <rdfs:range rdf:resource="#EAJavaxsdpositiveInteger"/>
+    </owl:DatatypeProperty>
+     	
+    <!-- +++++ -->
+        	
+    <!-- +++++++++++++++ -->
+    <!-- http://rdf-vocabulary.ddialliance.org/phdd/Phdd#FixedColumnDescription -->
+            
+    <!-- UML class -->
+    <owl:Class rdf:about="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#FixedColumnDescription">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd"/>
+        <rdfs:label xml:lang="en">fixed column description</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#ColumnDescription"/>   
+    </owl:Class>
+     	
+    <!-- UML attribute -->
+    <owl:DatatypeProperty rdf:about="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#endPosition">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd"/>
+        <rdfs:label xml:lang="en">end position</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#FixedColumnDescription"/>
+        <rdfs:range rdf:resource="#EAJavaxsdpositiveInteger"/>
+    </owl:DatatypeProperty>
+     	
+    <!-- UML attribute -->
+    <owl:DatatypeProperty rdf:about="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#startPosition">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd"/>
+        <rdfs:label xml:lang="en">start position</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#FixedColumnDescription"/>
+        <rdfs:range rdf:resource="#EAJavaxsdpositiveInteger"/>
+    </owl:DatatypeProperty>
+     	
+    <!-- UML attribute -->
+    <owl:DatatypeProperty rdf:about="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#width">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd"/>
+        <rdfs:label xml:lang="en">width</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#FixedColumnDescription"/>
+        <rdfs:range rdf:resource="#EAJavaxsdpositiveInteger"/>
+    </owl:DatatypeProperty>
+     	
+    <!-- +++++ -->
+        	
+    <!-- +++++++++++++++ -->
+    <!-- http://rdf-vocabulary.ddialliance.org/phdd/Phdd#FixedRecordLength -->
+            
+    <!-- UML class -->
+    <owl:Class rdf:about="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#FixedRecordLength">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd"/>
+        <rdfs:label xml:lang="en">fixed record length</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#TableStructure"/>   
+    </owl:Class>
+     	
+    <!-- UML attribute -->
+    <owl:DatatypeProperty rdf:about="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#recordLength">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd"/>
+        <rdfs:label xml:lang="en">record length</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#FixedRecordLength"/>
+        <rdfs:range rdf:resource="#EAJavaxsdpositiveInteger"/>
+    </owl:DatatypeProperty>
+     	
+    <!-- +++++ -->
+        	
+    <!-- +++++++++++++++ -->
+    <!-- http://rdf-vocabulary.ddialliance.org/phdd/Phdd#InputProgram -->
+            
+    <!-- UML class -->
+    <owl:Class rdf:about="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#InputProgram">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd"/>
+        <rdfs:label xml:lang="en">input program</rdfs:label>
+    </owl:Class>
+     	
+    <!-- UML attribute -->
+    <owl:DatatypeProperty rdf:about="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#programFileName">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd"/>
+        <rdfs:label xml:lang="en">program file name</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#InputProgram"/>
+        <rdfs:range rdf:resource="#EAJavaxsdstring"/>
+    </owl:DatatypeProperty>
+     	
+    <!-- UML attribute -->
+    <owl:DatatypeProperty rdf:about="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#programVersion">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd"/>
+        <rdfs:label xml:lang="en">program version</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#InputProgram"/>
+        <rdfs:range rdf:resource="#EAJavaxsdstring"/>
+    </owl:DatatypeProperty>
+     	
+    <!-- UML attribute -->
+    <owl:DatatypeProperty rdf:about="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#softwareType">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd"/>
+        <rdfs:label xml:lang="en">software type</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#InputProgram"/>
+        <rdfs:range rdf:resource="#EAJavaxsdstring"/>
+    </owl:DatatypeProperty>
+     	
+    <!-- +++++ -->
+        	
+    <!-- +++++++++++++++ -->
+    <!-- http://rdf-vocabulary.ddialliance.org/phdd/Phdd#Table -->
+            
+    <!-- UML class -->
+    <owl:Class rdf:about="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#Table">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd"/>
+        <rdfs:label xml:lang="en">table</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Dcat#Distribution"/>   
+    </owl:Class>
+     
+    <!-- UML association or composition -->
+    <owl:ObjectProperty rdf:about="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#isDescribedBy">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd"/>
+        <rdfs:label xml:lang="en">is described by</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#Table"/>
+        <rdfs:range rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#TableDescription"/>
+    </owl:ObjectProperty>
+     
+    <!-- UML association or composition -->
+    <owl:ObjectProperty rdf:about="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#isStructuredBy">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd"/>
+        <rdfs:label xml:lang="en">is structured by</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#Table"/>
+        <rdfs:range rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#TableStructure"/>
+    </owl:ObjectProperty>
+     	
+    <!-- target cardinality -->
+    <rdf:Description rdf:about="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#Table">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#isDescribedBy"/>
+                <owl:onClass rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#TableDescription"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:minCardinality>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+     	
+    <!-- target cardinality -->
+    <rdf:Description rdf:about="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#Table">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#isStructuredBy"/>
+                <owl:onClass rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#TableStructure"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:minCardinality>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+     	
+    <!-- +++++ -->
+        	
+    <!-- +++++++++++++++ -->
+    <!-- http://rdf-vocabulary.ddialliance.org/phdd/Phdd#TableDescription -->
+            
+    <!-- UML class -->
+    <owl:Class rdf:about="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#TableDescription">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd"/>
+        <rdfs:label xml:lang="en">table description</rdfs:label>
+    </owl:Class>
+     	
+    <!-- UML attribute -->
+    <owl:DatatypeProperty rdf:about="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#caseQuantity">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd"/>
+        <rdfs:label xml:lang="en">case quantity</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#TableDescription"/>
+        <rdfs:range rdf:resource="#EAJavaxsdnonNegativeInteger"/>
+    </owl:DatatypeProperty>
+     	
+    <!-- UML attribute -->
+    <owl:DatatypeProperty rdf:about="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#fileName">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd"/>
+        <rdfs:label xml:lang="en">file name</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#TableDescription"/>
+        <rdfs:range rdf:resource="#EAJavaxsdstringxsduri"/>
+    </owl:DatatypeProperty>
+     	
+    <!-- UML attribute -->
+    <owl:DatatypeProperty rdf:about="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#overallRecordCount">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd"/>
+        <rdfs:label xml:lang="en">overall record count</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#TableDescription"/>
+        <rdfs:range rdf:resource="#EAJavaxsdnonNegativeInteger"/>
+    </owl:DatatypeProperty>
+     	
+    <!-- UML attribute -->
+    <owl:DatatypeProperty rdf:about="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#recordsPerCase">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd"/>
+        <rdfs:label xml:lang="en">records per case</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#TableDescription"/>
+        <rdfs:range rdf:resource="#EAJavaxsdpositiveInteger"/>
+    </owl:DatatypeProperty>
+     
+    <!-- UML association or composition -->
+    <owl:ObjectProperty rdf:about="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#inputProgram">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd"/>
+        <rdfs:label xml:lang="en">input program</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#TableDescription"/>
+        <rdfs:range rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#InputProgram"/>
+    </owl:ObjectProperty>
+     	
+    <!-- source cardinality -->
+    <rdf:Description rdf:about="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#InputProgram">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#inputProgram"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:onClass rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#TableDescription"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+     	
+    <!-- +++++ -->
+        	
+    <!-- +++++++++++++++ -->
+    <!-- http://rdf-vocabulary.ddialliance.org/phdd/Phdd#TableStructure -->
+            
+    <!-- UML class -->
+    <owl:Class rdf:about="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#TableStructure">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd"/>
+        <rdfs:label xml:lang="en">table structure</rdfs:label>
+    </owl:Class>
+     	
+    <!-- UML attribute -->
+    <owl:DatatypeProperty rdf:about="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#characterSet">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd"/>
+        <rdfs:label xml:lang="en">character set</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#TableStructure"/>
+        <rdfs:range rdf:resource="#EAJavaxsdstring"/>
+    </owl:DatatypeProperty>
+     	
+    <!-- UML attribute -->
+    <owl:DatatypeProperty rdf:about="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#defaultDecimalPositions">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd"/>
+        <rdfs:label xml:lang="en">default decimal positions</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#TableStructure"/>
+        <rdfs:range rdf:resource="#EAJavaxsdpositiveInteger"/>
+    </owl:DatatypeProperty>
+     	
+    <!-- UML attribute -->
+    <owl:DatatypeProperty rdf:about="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#defaultDecimalSeparator">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd"/>
+        <rdfs:label xml:lang="en">default decimal separator</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#TableStructure"/>
+        <rdfs:range rdf:resource="#EAJavaxsdstring"/>
+    </owl:DatatypeProperty>
+     	
+    <!-- UML attribute -->
+    <owl:DatatypeProperty rdf:about="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#defaultDigitGroupSeparator">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd"/>
+        <rdfs:label xml:lang="en">default digit group separator</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#TableStructure"/>
+        <rdfs:range rdf:resource="#EAJavaxsdstring"/>
+    </owl:DatatypeProperty>
+     	
+    <!-- UML attribute -->
+    <owl:DatatypeProperty rdf:about="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#defaultLanguage">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd"/>
+        <rdfs:label xml:lang="en">default language</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#TableStructure"/>
+        <rdfs:range rdf:resource="#EAJavaxsdstring"/>
+    </owl:DatatypeProperty>
+     	
+    <!-- UML attribute -->
+    <owl:DatatypeProperty rdf:about="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#defaultLocale">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd"/>
+        <rdfs:label xml:lang="en">default locale</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#TableStructure"/>
+        <rdfs:range rdf:resource="#EAJavaxsdstring"/>
+    </owl:DatatypeProperty>
+     	
+    <!-- UML attribute -->
+    <owl:DatatypeProperty rdf:about="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#newLine">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd"/>
+        <rdfs:label xml:lang="en">new line</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#TableStructure"/>
+        <rdfs:range rdf:resource="#EAJavaxsdstring"/>
+    </owl:DatatypeProperty>
+     
+    <!-- UML association or composition -->
+    <owl:ObjectProperty rdf:about="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#defaultLanguage">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd"/>
+        <rdfs:label xml:lang="en">default language</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#TableStructure"/>
+        <rdfs:range rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Skos#Skos:Concept"/>
+    </owl:ObjectProperty>
+     
+    <!-- UML association or composition -->
+    <owl:ObjectProperty rdf:about="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#column">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd"/>
+        <rdfs:label xml:lang="en">column</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#TableStructure"/>
+        <rdfs:range rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#Column"/>
+    </owl:ObjectProperty>
+     
+    <!-- UML association or composition -->
+    <owl:ObjectProperty rdf:about="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#characterSet">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd"/>
+        <rdfs:label xml:lang="en">character set</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#TableStructure"/>
+        <rdfs:range rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Skos#Skos:Concept"/>
+    </owl:ObjectProperty>
+     
+    <!-- UML association or composition -->
+    <owl:ObjectProperty rdf:about="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#defaultLocale">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd"/>
+        <rdfs:label xml:lang="en">default locale</rdfs:label>
+        <rdfs:domain rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#TableStructure"/>
+        <rdfs:range rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Skos#Skos:Concept"/>
+    </owl:ObjectProperty>
+     	
+    <!-- target cardinality -->
+    <rdf:Description rdf:about="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#TableStructure">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#defaultLanguage"/>
+                <owl:onClass rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Skos#Skos:Concept"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+     	
+    <!-- target cardinality -->
+    <rdf:Description rdf:about="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#TableStructure">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#column"/>
+                <owl:onClass rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#Column"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+     	
+    <!-- target cardinality -->
+    <rdf:Description rdf:about="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#TableStructure">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#characterSet"/>
+                <owl:onClass rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Skos#Skos:Concept"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:minCardinality>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+     	
+    <!-- target cardinality -->
+    <rdf:Description rdf:about="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#TableStructure">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Phdd#defaultLocale"/>
+                <owl:onClass rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Skos#Skos:Concept"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+     	
+    <!-- +++++ -->
+        	
+    <!-- +++++++++++++++ -->
+    <!-- http://rdf-vocabulary.ddialliance.org/phdd/Skos#Skos:Concept -->
+            
+    <!-- UML class -->
+    <owl:Class rdf:about="http://rdf-vocabulary.ddialliance.org/phdd/Skos#Skos:Concept">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdfs:isDefinedBy rdf:resource="http://rdf-vocabulary.ddialliance.org/phdd/Skos"/>
+        <rdfs:label xml:lang="en">skos:concept</rdfs:label>
+    </owl:Class>
+     	
+    <!-- +++++ -->
+        	
+</rdf:RDF>
