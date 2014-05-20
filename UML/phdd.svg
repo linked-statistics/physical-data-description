@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill-rule="evenodd" height="7.077in" preserveAspectRatio="none" stroke-linecap="round" viewBox="0 0 1333 799" width="11.807in">
+<style type="text/css">
+.brush0 { fill: rgb(255,255,255); }
+.pen0 { stroke: rgb(0,0,0); stroke-width: 1; stroke-linejoin: round; }
+.font0 { font-weight: bold; font-size: 10px; font-family: Calibri; }
+.font1 { font-weight: bold; font-size: 16px; font-family: System, sans-serif; }
+.font2 { font-size: 10px; font-family: Calibri; }
+.font3 { font-style: italic; font-size: 10px; font-family: Calibri; }
+</style>
+<g>
+<line class="pen0" fill="none" x1="1" x2="1" y1="1" y2="798"/>
+<line class="pen0" fill="none" x1="1" x2="1332" y1="798" y2="798"/>
+<line class="pen0" fill="none" x1="1332" x2="1332" y1="798" y2="1"/>
+<line class="pen0" fill="none" x1="1332" x2="1" y1="1" y2="1"/>
+<polygon class="pen0 brush0" points="1,23 63,23 76,9 76,1 1,1 1,23"/>
+<g>
+<rect fill="rgb(255,255,255)" height="10" width="55" x="6" y="4"/>
+<text class="font0" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="6 11 14 20 25 30 33 40 47 54" xml:space="preserve" y="4">class phdd</text>
+</g>
+<rect class="pen0 brush0" height="98" width="335" x="25" y="503"/>
+<text class="font0" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="147 153 159 166 169 176 184 191 196 201 206 209 216 221 224 231" xml:space="preserve" y="512">TableDescription</text>
+<line class="pen0" fill="none" x1="25" x2="359" y1="532" y2="532"/>
+<text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="30 34" xml:space="preserve" y="536">- </text>
+<text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="51 57 64 70 76 85 92 99 106 110 114 118 124 127 130 133 139 145 152 155 162 169 176 184 190 196 203 207 211 217 223 227 234 238 244 250 256 261 264 268 275 278 281 288" xml:space="preserve" y="536">caseQuantity  :xsd:nonNegativeInteger [0..1]</text>
+<text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="30 34" xml:space="preserve" y="551">- </text>
+<text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="51 55 59 63 69 77 84 94 100 103 106 109 115 121 128 131 137 141 146 150 157 163 166 169 175 181 188 191 198 203" xml:space="preserve" y="551">fileName  :xsd:string, xsd:uri</text>
+<text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="30 34" xml:space="preserve" y="566">- </text>
+<text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="51 56 62 68 75 80 87 93 100 106 111 118 125 131 137 140 143 146 152 158 165 168 175 182 188 192 196 200 206 212 216 223 227 233 239 245 250 253 259 262" xml:space="preserve" y="566">recordsPerCase  :xsd:positiveInteger = 1</text>
+<text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="30 34" xml:space="preserve" y="581">- </text>
+<text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="51 58 64 70 75 82 86 90 97 103 109 116 121 128 135 142 149 156 160 163 166 169 175 181 188 191 198 205 212 220 226 232 239 243 247 253 259 263 270 274 280 286 292 297 300 304 311 314 317 324" xml:space="preserve" y="581">overallRecordCount  :xsd:nonNegativeInteger [0..1]</text>
+<rect class="pen0 brush0" height="143" width="378" x="517" y="225"/>
+<text class="font0" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="665 671 677 684 687 694 700 705 710 717 722 727 734 739" xml:space="preserve" y="234">TableStructure</text>
+<line class="pen0" fill="none" x1="517" x2="894" y1="254" y2="254"/>
+<text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="522 526" xml:space="preserve" y="258">- </text>
+<text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="543 549 556 563 568 575 581 585 591 596 602 608 612 615 618 621 627 633 640 643 649 653 658 662 669" xml:space="preserve" y="258">characterSet  :xsd:string</text>
+<text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="522 526" xml:space="preserve" y="273">- </text>
+<text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="543 550 556 560 567 574 578 582 590 596 602 606 616 623 627 633 639 646 653 658 665 669 676 681 684 687 690 696 702 709 712 718 722 727 731 738 744 747 751 758 761 764 771" xml:space="preserve" y="273">defaultDecimalSeparator  :xsd:string [0..1]</text>
+<text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="522 526" xml:space="preserve" y="288">- </text>
+<text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="543 550 556 560 567 574 578 582 590 594 600 604 608 616 621 628 635 642 648 654 661 668 673 680 684 691 696 699 702 705 711 717 724 727 733 737 742 746 753 759 762 766 773 776 779 786" xml:space="preserve" y="288">defaultDigitGroupSeparator  :xsd:string [0..1]</text>
+<text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="522 526" xml:space="preserve" y="303">- </text>
+<text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="543 550 556 560 567 574 578 582 587 594 601 607 614 621 627 633 636 639 642 648 654 661 664 670 674 679 683 690 696 699 703 710 713 716 723" xml:space="preserve" y="303">defaultLanguage  :xsd:string [0..1]</text>
+<text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="522 526" xml:space="preserve" y="318">- </text>
+<text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="543 550 556 560 567 574 578 582 587 594 600 607 611 617 620 623 626 632 638 645 648 654 658 663 667 674 680 683 687 694 697 700 707" xml:space="preserve" y="318">defaultLocale  :xsd:string [0..1]</text>
+<text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="522 526" xml:space="preserve" y="333">- </text>
+<text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="543 550 556 560 567 574 578 582 590 596 602 606 616 623 627 634 641 647 651 655 659 666 673 679 682 685 688 694 700 707 710 717 724 730 734 738 742 748 754 758 765 769 775 781 787 792 795 799 806 809 812 819" xml:space="preserve" y="333">defaultDecimalPositions  :xsd:positiveInteger [0..1]</text>
+<text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="522 526" xml:space="preserve" y="348">- </text>
+<text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="543 550 556 565 570 574 581 587 590 593 596 602 608 615 618 624 628 633 637 644 650 653 659 662 669 676 681" xml:space="preserve" y="348">newLine  :xsd:string = CRLF</text>
+<rect class="pen0 brush0" height="121" width="309" x="991" y="503"/>
+<text class="font0" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="1093 1100 1107 1110 1117 1128 1135 1143 1150 1155 1160 1165 1168 1175 1180 1183 1190" xml:space="preserve" y="512">ColumnDescription</text>
+<line class="pen0" fill="none" x1="991" x2="1299" y1="532" y2="532"/>
+<text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="996 1000" xml:space="preserve" y="536">- </text>
+<text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="1017 1022 1028 1034 1041 1051 1061 1067 1074 1081 1087 1094 1102 1109 1113 1120 1126 1132 1139 1145 1148 1151 1154 1160 1166 1173 1176 1182 1186 1191 1195 1202 1208 1211 1215 1222 1225 1228 1235" xml:space="preserve" y="536">recommendedDataType  :xsd:string [0..1]</text>
+<text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="996 1000" xml:space="preserve" y="551">- </text>
+<text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="1017 1023 1027 1034 1039 1046 1052 1058 1064 1071 1076 1086 1093 1097 1100 1103 1106 1112 1118 1125 1128 1134 1138 1143 1147 1154 1160 1163 1167 1174 1177 1180 1187" xml:space="preserve" y="551">storageFormat  :xsd:string [0..1]</text>
+<text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="996 1000" xml:space="preserve" y="566">- </text>
+<text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="1017 1022 1028 1034 1041 1051 1061 1067 1074 1081 1087 1094 1102 1106 1112 1119 1123 1130 1136 1144 1151 1155 1162 1168 1175 1180 1190 1197 1201 1204 1207 1210 1216 1222 1229 1232 1238 1242 1247 1251 1258 1264 1267 1271 1278 1281 1284 1291" xml:space="preserve" y="566">recommendedDisplayDataFormat  :xsd:string [0..1]</text>
+<text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="996 1000" xml:space="preserve" y="581">- </text>
+<text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="1017 1024 1030 1036 1040 1050 1057 1061 1068 1075 1081 1085 1089 1093 1100 1107 1113 1116 1119 1122 1128 1134 1141 1144 1151 1158 1164 1168 1172 1176 1182 1188 1192 1199 1203 1209 1215 1221 1226 1229 1233 1240 1243 1246 1253" xml:space="preserve" y="581">decimalPositions  :xsd:positiveInteger [0..1]</text>
+<text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="996 1000" xml:space="preserve" y="596">- </text>
+<text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="1017 1022 1028 1034 1041 1046 1053 1061 1068 1078 1085 1091 1096 1099 1102 1105 1111 1117 1124 1127 1134 1141 1147 1151 1155 1159 1165 1171 1175 1182 1186 1192 1198 1204 1209 1212 1216 1223 1226 1229 1236 1240 1243 1249 1252" xml:space="preserve" y="596">recordNumber  :xsd:positiveInteger [0..1] = 1</text>
+<rect class="pen0 brush0" height="70" width="90" x="517" y="503"/>
+<text class="font0" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="526 531 537 544 549 553 560 567 574 579 586 593" xml:space="preserve" y="512">skos:Concept</text>
+<rect class="pen0 brush0" height="70" width="246" x="385" y="78"/>
+<text class="font0" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="455 461 464 470 477 484 491 498 503 510 515 522 528 535 542 548 553" xml:space="preserve" y="87">FixedRecordLength</text>
+<line class="pen0" fill="none" x1="385" x2="630" y1="107" y2="107"/>
+<text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="390 394" xml:space="preserve" y="111">- </text>
+<text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="411 416 422 428 435 440 447 452 458 465 471 475 482 485 488 491 497 503 510 513 520 527 533 537 541 545 551 557 561 568 572 578 584 590 595 598 602 609 612 615 622" xml:space="preserve" y="111">recordLength  :xsd:positiveInteger [0..1]</text>
+<rect class="pen0 brush0" height="113" width="337" x="767" y="35"/>
+<text class="font0" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="908 916 923 926 929 940 943 948 955" xml:space="preserve" y="44">Delimited</text>
+<line class="pen0" fill="none" x1="767" x2="1103" y1="64" y2="64"/>
+<text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="772 776" xml:space="preserve" y="68">- </text>
+<text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="793 800 806 810 814 824 828 832 838 843 846 849 852 858 864 871 874 880 884 889 893 900" xml:space="preserve" y="68">delimiter  :xsd:string</text>
+<text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="772 776" xml:space="preserve" y="83">- </text>
+<text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="793 797 803 809 813 822 829 836 840 844 848 852 858 863 866 869 872 878 884 891 894 900 904 909 913 920 926 929 933 940 943 946 953" xml:space="preserve" y="83">textQualifier  :xsd:string [0..1]</text>
+<text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="772 776" xml:space="preserve" y="98">- </text>
+<text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="793 799 806 813 819 825 831 838 842 846 852 858 866 872 876 880 890 894 898 904 909 915 922 928 937 944 950 953 956 959 962 968 974 981 984 991 998 1005 1009 1015 1022 1029 1032 1036 1043 1046 1049 1056 1060 1063 1069 1072 1076 1083 1087 1093" xml:space="preserve" y="98">consecutiveDelimitersAsOne   :xsd:boolean [0..1] = false</text>
+<text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="772 776" xml:space="preserve" y="113">- </text>
+<text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="793 800 807 817 823 829 838 845 851 855 860 866 870 877 884 893 896 899 902 908 914 921 924 931 938 945 949 955 962 969 972 976 983 986 989 996 1000 1003 1009 1012 1016 1021 1028" xml:space="preserve" y="113">namesOnFirstRow  :xsd:boolean [0..1] = true</text>
+<text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="772 776" xml:space="preserve" y="128">- </text>
+<text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="793 797 801 806 812 816 824 831 835 842 847 851 858 864 867 870 873 879 885 892 895 902 909 915 919 923 927 933 939 943 950 954 960 966 972 977 980 984 991 994 997 1004 1008 1011 1017 1020" xml:space="preserve" y="128">firstDataLine  :xsd:positiveInteger [0..1] = 2</text>
+<rect class="pen0 brush0" height="70" width="90" x="257" y="225"/>
+<text class="font3" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="281 289 292 297 301 305 308 315 322 326 329 336" xml:space="preserve" y="228">Distribution</text>
+<text class="font0" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="287 293 299 306 309" xml:space="preserve" y="246">Table</text>
+<rect class="pen0 brush0" height="70" width="90" x="1218" y="225"/>
+<text class="font0" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="1242 1249 1256 1259 1266 1277" xml:space="preserve" y="234">Column</text>
+<rect class="pen0 brush0" height="83" width="211" x="149" y="691"/>
+<text class="font0" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="216 219 226 233 240 245 252 257 264 270 275 281" xml:space="preserve" y="700">InputProgram</text>
+<line class="pen0" fill="none" x1="149" x2="359" y1="720" y2="720"/>
+<text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="154 158" xml:space="preserve" y="724">- </text>
+<text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="175 182 187 194 200 205 212 222 228 232 236 242 250 257 267 273 276 279 282 288 294 301 304 310 314 319 323 330" xml:space="preserve" y="724">programFileName  :xsd:string</text>
+<text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="154 158" xml:space="preserve" y="739">- </text>
+<text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="175 181 188 192 196 205 212 217 223 229 235 242 248 251 254 257 263 269 276 279 285 289 294 298 305" xml:space="preserve" y="739">softwareType  :xsd:string</text>
+<text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="154 158" xml:space="preserve" y="754">- </text>
+<text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="175 182 187 194 200 205 212 222 229 235 240 246 250 257 264 267 270 273 279 285 292 295 301 305 310 314 321" xml:space="preserve" y="754">programVersion  :xsd:string</text>
+<rect class="pen0 brush0" height="83" width="241" x="991" y="689"/>
+<text class="font0" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="1045 1051 1054 1060 1067 1074 1081 1088 1091 1098 1109 1116 1124 1131 1136 1141 1146 1149 1156 1161 1164 1171" xml:space="preserve" y="698">FixedColumnDescription</text>
+<line class="pen0" fill="none" x1="991" x2="1231" y1="718" y2="718"/>
+<text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="996 1000" xml:space="preserve" y="722">- </text>
+<text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="1017 1023 1027 1034 1039 1043 1050 1057 1063 1067 1071 1075 1082 1089 1092 1095 1098 1104 1110 1117 1120 1127 1134 1140 1144 1148 1152 1158 1164 1168 1175 1179 1185 1191 1197" xml:space="preserve" y="722">startPosition  :xsd:positiveInteger</text>
+<text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="996 1000" xml:space="preserve" y="737">- </text>
+<text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="1017 1023 1030 1037 1044 1051 1057 1061 1065 1069 1076 1083 1086 1089 1092 1098 1104 1111 1114 1121 1128 1134 1138 1142 1146 1152 1158 1162 1169 1173 1179 1185 1191 1196 1199 1203 1210 1213 1216 1223" xml:space="preserve" y="737">endPosition  :xsd:positiveInteger [0..1]</text>
+<text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="996 1000" xml:space="preserve" y="752">- </text>
+<text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="1017 1026 1030 1037 1041 1048 1051 1054 1057 1063 1069 1076 1079 1086 1093 1099 1103 1107 1111 1117 1123 1127 1134 1138 1144 1150 1156 1161 1164 1168 1175 1178 1181 1188" xml:space="preserve" y="752">width  :xsd:positiveInteger [0..1]</text>
+<rect class="pen0 brush0" height="70" width="241" x="991" y="366"/>
+<text class="font0" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="1032 1040 1047 1050 1053 1064 1067 1072 1079 1086 1093 1100 1103 1110 1121 1128 1136 1143 1148 1153 1158 1161 1168 1173 1176 1183" xml:space="preserve" y="375">DelimitedColumnDescription</text>
+<line class="pen0" fill="none" x1="991" x2="1231" y1="395" y2="395"/>
+<text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="996 1000" xml:space="preserve" y="399">- </text>
+<text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="1017 1023 1030 1034 1041 1051 1058 1065 1072 1078 1082 1086 1090 1097 1104 1107 1110 1113 1119 1125 1132 1135 1142 1149 1155 1159 1163 1167 1173 1179 1183 1190 1194 1200 1206 1212" xml:space="preserve" y="399">columnPosition  :xsd:positiveInteger</text>
+<line class="pen0" fill="none" x1="1284" x2="1284" y1="295" y2="503"/>
+<line class="pen0" fill="none" x1="1284" x2="1278" y1="503" y2="488"/>
+<line class="pen0" fill="none" x1="1284" x2="1290" y1="503" y2="488"/>
+<g>
+<rect fill="rgb(255,255,255)" height="10" width="19" x="1292" y="300"/>
+<text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="1292 1299 1302 1305" xml:space="preserve" y="300">0..*</text>
+</g>
+<g>
+<rect fill="rgb(255,255,255)" height="10" width="78" x="1194" y="325"/>
+<text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="1194 1198 1204 1212 1218 1224 1230 1235 1239 1246 1252 1259 1266" xml:space="preserve" y="325">isDescribedBy</text>
+</g>
+<g>
+<rect fill="rgb(255,255,255)" height="10" width="7" x="1292" y="483"/>
+<text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="1292" xml:space="preserve" y="483">1</text>
+</g>
+<line class="pen0" fill="none" x1="347" x2="517" y1="244" y2="244"/>
+<line class="pen0" fill="none" x1="517" x2="502" y1="244" y2="250"/>
+<line class="pen0" fill="none" x1="517" x2="502" y1="244" y2="238"/>
+<g>
+<rect fill="rgb(255,255,255)" height="10" width="19" x="350" y="249"/>
+<text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="350 357 360 363" xml:space="preserve" y="249">0..*</text>
+</g>
+<g>
+<rect fill="rgb(255,255,255)" height="10" width="80" x="392" y="228"/>
+<text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="392 396 402 408 412 417 424 430 434 441 446 452 459 466" xml:space="preserve" y="228">isStructuredBy</text>
+</g>
+<g>
+<rect fill="rgb(255,255,255)" height="10" width="7" x="507" y="249"/>
+<text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="507" xml:space="preserve" y="249">1</text>
+</g>
+<line class="pen0" fill="none" x1="302" x2="302" y1="295" y2="503"/>
+<line class="pen0" fill="none" x1="302" x2="296" y1="503" y2="488"/>
+<line class="pen0" fill="none" x1="302" x2="308" y1="503" y2="488"/>
+<g>
+<rect fill="rgb(255,255,255)" height="10" width="19" x="310" y="300"/>
+<text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="310 317 320 323" xml:space="preserve" y="300">0..*</text>
+</g>
+<g>
+<rect fill="rgb(255,255,255)" height="10" width="78" x="209" y="378"/>
+<text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="209 213 219 227 233 239 245 250 254 261 267 274 281" xml:space="preserve" y="378">isDescribedBy</text>
+</g>
+<g>
+<rect fill="rgb(255,255,255)" height="10" width="7" x="310" y="483"/>
+<text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="310" xml:space="preserve" y="483">1</text>
+</g>
+<line class="pen0" fill="none" x1="895" x2="1218" y1="243" y2="243"/>
+<line class="pen0" fill="none" x1="1218" x2="1203" y1="243" y2="249"/>
+<line class="pen0" fill="none" x1="1218" x2="1203" y1="243" y2="237"/>
+<g>
+<rect fill="rgb(255,255,255)" height="10" width="19" x="898" y="248"/>
+<text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="898 905 908 911" xml:space="preserve" y="248">0..*</text>
+</g>
+<g>
+<rect fill="rgb(255,255,255)" height="10" width="41" x="1037" y="227"/>
+<text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="1037 1043 1050 1054 1061 1071" xml:space="preserve" y="227">column</text>
+</g>
+<g>
+<rect fill="rgb(255,255,255)" height="10" width="19" x="1196" y="248"/>
+<text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="1196 1203 1206 1209" xml:space="preserve" y="248">1..*</text>
+</g>
+<line class="pen0" fill="none" x1="1117" x2="1117" y1="689" y2="624"/>
+<polygon class="pen0 brush0" points="1123,640 1111,640 1117,624"/>
+<line class="pen0" fill="none" x1="1116" x2="1116" y1="436" y2="503"/>
+<polygon class="pen0 brush0" points="1110,487 1122,487 1116,503"/>
+<line class="pen0" fill="none" x1="991" x2="607" y1="514" y2="514"/>
+<line class="pen0" fill="none" x1="607" x2="622" y1="514" y2="508"/>
+<line class="pen0" fill="none" x1="607" x2="622" y1="514" y2="520"/>
+<g>
+<rect fill="rgb(255,255,255)" height="10" width="19" x="969" y="519"/>
+<text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="969 976 979 982" xml:space="preserve" y="519">0..*</text>
+</g>
+<g>
+<rect fill="rgb(255,255,255)" height="10" width="80" x="759" y="498"/>
+<text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="759 765 769 776 781 788 794 800 806 813 818 828 835" xml:space="preserve" y="498">storageFormat</text>
+</g>
+<g>
+<rect fill="rgb(255,255,255)" height="10" width="20" x="610" y="519"/>
+<text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="610 617 620 623" xml:space="preserve" y="519">0..1</text>
+</g>
+<line class="pen0" fill="none" x1="171" x2="171" y1="601" y2="691"/>
+<line class="pen0" fill="none" x1="171" x2="165" y1="691" y2="676"/>
+<line class="pen0" fill="none" x1="171" x2="177" y1="691" y2="676"/>
+<g>
+<rect fill="rgb(255,255,255)" height="10" width="20" x="179" y="606"/>
+<text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="179 186 189 192" xml:space="preserve" y="606">0..1</text>
+</g>
+<g>
+<rect fill="rgb(255,255,255)" height="10" width="76" x="179" y="637"/>
+<text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="179 183 190 197 204 208 215 220 227 233 238 245" xml:space="preserve" y="637">inputProgram</text>
+</g>
+<g>
+<rect fill="rgb(255,255,255)" height="10" width="19" x="192" y="673"/>
+<text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="192 199 202 205" xml:space="preserve" y="673">0..*</text>
+</g>
+<line class="pen0" fill="none" x1="831" x2="831" y1="148" y2="225"/>
+<polygon class="pen0 brush0" points="825,209 837,209 831,225"/>
+<line class="pen0" fill="none" x1="577" x2="577" y1="148" y2="225"/>
+<polygon class="pen0 brush0" points="571,209 583,209 577,225"/>
+<line class="pen0" fill="none" x1="517" x2="403" y1="332" y2="332"/>
+<line class="pen0" fill="none" x1="403" x2="403" y1="332" y2="536"/>
+<line class="pen0" fill="none" x1="403" x2="517" y1="536" y2="536"/>
+<line class="pen0" fill="none" x1="517" x2="502" y1="536" y2="542"/>
+<line class="pen0" fill="none" x1="517" x2="502" y1="536" y2="530"/>
+<g>
+<rect fill="rgb(255,255,255)" height="10" width="19" x="467" y="349"/>
+<text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="467 474 477 480" xml:space="preserve" y="349">0..*</text>
+</g>
+<g>
+<rect fill="rgb(255,255,255)" height="10" width="74" x="316" y="437"/>
+<text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="316 323 329 333 340 347 351 355 360 367 373 380 384" xml:space="preserve" y="437">defaultLocale</text>
+</g>
+<g>
+<rect fill="rgb(255,255,255)" height="10" width="20" x="494" y="541"/>
+<text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="494 501 504 507" xml:space="preserve" y="541">0..1</text>
+</g>
+<line class="pen0" fill="none" x1="593" x2="593" y1="368" y2="503"/>
+<line class="pen0" fill="none" x1="593" x2="587" y1="503" y2="488"/>
+<line class="pen0" fill="none" x1="593" x2="599" y1="503" y2="488"/>
+<g>
+<rect fill="rgb(255,255,255)" height="10" width="19" x="601" y="373"/>
+<text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="601 608 611 614" xml:space="preserve" y="373">0..*</text>
+</g>
+<g>
+<rect fill="rgb(255,255,255)" height="10" width="90" x="602" y="439"/>
+<text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="602 609 615 619 626 633 637 641 646 653 660 666 673 680 686" xml:space="preserve" y="439">defaultLanguage</text>
+</g>
+<g>
+<rect fill="rgb(255,255,255)" height="10" width="20" x="601" y="483"/>
+<text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="601 608 611 614" xml:space="preserve" y="483">0..1</text>
+</g>
+<line class="pen0" fill="none" x1="534" x2="534" y1="368" y2="503"/>
+<line class="pen0" fill="none" x1="534" x2="528" y1="503" y2="488"/>
+<line class="pen0" fill="none" x1="534" x2="540" y1="503" y2="488"/>
+<g>
+<rect fill="rgb(255,255,255)" height="10" width="19" x="542" y="373"/>
+<text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="542 549 552 555" xml:space="preserve" y="373">0..*</text>
+</g>
+<g>
+<rect fill="rgb(255,255,255)" height="10" width="69" x="452" y="406"/>
+<text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="452 458 465 472 477 484 490 494 500 505 511 517" xml:space="preserve" y="406">characterSet</text>
+</g>
+<g>
+<rect fill="rgb(255,255,255)" height="10" width="7" x="542" y="483"/>
+<text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="542" xml:space="preserve" y="483">1</text>
+</g>
+<line class="pen0" fill="none" x1="991" x2="607" y1="558" y2="558"/>
+<line class="pen0" fill="none" x1="607" x2="622" y1="558" y2="552"/>
+<line class="pen0" fill="none" x1="607" x2="622" y1="558" y2="564"/>
+<g>
+<rect fill="rgb(255,255,255)" height="10" width="19" x="969" y="563"/>
+<text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="969 976 979 982" xml:space="preserve" y="563">0..*</text>
+</g>
+<g>
+<rect fill="rgb(255,255,255)" height="10" width="184" x="707" y="542"/>
+<text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="707 712 718 724 731 741 751 757 764 771 777 784 792 796 802 809 813 820 826 834 841 845 852 858 865 870 880 887" xml:space="preserve" y="542">recommendedDisplayDataFormat</text>
+</g>
+<g>
+<rect fill="rgb(255,255,255)" height="10" width="20" x="610" y="563"/>
+<text class="font2" fill="rgb(0,0,0)" stroke="none" style="dominant-baseline: text-before-edge;" x="610 617 620 623" xml:space="preserve" y="563">0..1</text>
+</g>
+</g>
+</svg>
