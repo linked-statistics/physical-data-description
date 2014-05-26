@@ -521,16 +521,15 @@ phdd:column a rdf:Property, owl:ObjectProperty;
 phdd:defaultLocale a rdf:Property, owl:ObjectProperty;
     rdfs:label "Default locale"@en;
 	rdfs:comment """
-	The default locale of text in the table. It is a set of parameters that defines the user's language, country and any special variant preferences according to BCP 47.
-	Supports the use of an external controlled vocabulary in SKOS.
+	The default locale of text in the table. It is a set of parameters that defines the country, and any special variant preferences similar to BCP 47. The language can be defined by "defaultLanguage". Supports the use of an external controlled vocabulary in SKOS.
 
-	Equivalent element in DDI 3.2: p:LocaleOfData
+	Related element in DDI 3.2: p:LocaleOfData
 	DDI 3.2 Documentation: http://www.ddialliance.org/Specification/DDI-Lifecycle/3.2/XMLSchema/FieldLevelDocumentation/schemas/physicaldataproduct_xsd/elements/LocaleOfData.html
 	"""@en;
     rdfs:domain phdd:TableStructure;
     rdfs:range [a owl:Class; owl:unionOf (skos:Concept xsd:string)];
     rdfs:isDefinedBy <http://rdf-vocabulary.ddialliance.org/phdd>;
-    rdfs:isDefinedBy <http://www.ddialliance.org/Specification/DDI-Lifecycle/3.2/XMLSchema/FieldLevelDocumentation/schemas/physicaldataproduct_xsd/elements/LocaleOfData.html>.
+    rdfs:seeAlso <http://www.ddialliance.org/Specification/DDI-Lifecycle/3.2/XMLSchema/FieldLevelDocumentation/schemas/physicaldataproduct_xsd/elements/LocaleOfData.html>.
 	
 # characterSet
 phdd:characterSet a rdf:Property, owl:ObjectProperty;
