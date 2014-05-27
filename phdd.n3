@@ -1,0 +1,385 @@
+<http://rdf-vocabulary.ddialliance.org/phdd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://rdf-vocabulary.ddialliance.org/phdd> <http://purl.org/dc/elements/1.1/title> "Physical Data Description (PHDD)"@en .
+<http://rdf-vocabulary.ddialliance.org/phdd> <http://www.w3.org/2000/01/rdf-schema#comment> "\n\t    Physical data description (PHDD) of existing or published data (tables) in a rectangular format. The data could be either represented in records with character-separated values (CSV) or in records with fixed length. \n\t\tPHDD could be used standalone or together with related vocabularies like Data Catalog Vocabulary (DCAT) or DDI-RDF Discovery.\n\t\tDescriptions in PHDD could be added to Web pages which provide tables in rectangular format. This would enable processing by programs of this data. \n\t\tThe combined usage of PHDD, DDI-RDF Discovery, and DCAT would enable the creation of data repositories which provide metadata for the description of collections, for data discovery, and for processing of the data.\n\t\tPHDD is based on the DDI (Data Documentation Initiative, ddialliance.org) specification.\n        This ontology is available at http://rdf-vocabulary.ddialliance.org/phdd, and uses the namespace prefix phdd."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://rdf-vocabulary.ddialliance.org/phdd> <http://purl.org/dc/elements/1.1/description> <https://raw.githubusercontent.com/linked-statistics/physical-data-description/master/UML/phdd_web.png> .
+<http://rdf-vocabulary.ddialliance.org/phdd> <http://purl.org/dc/elements/1.1/rights> "This work is distributed under a Creative Commons Attribution License (http://creativecommons.org/licenses/by-nc-sa/3.0/us/)."@en .
+<http://rdf-vocabulary.ddialliance.org/phdd> <http://purl.org/dc/elements/1.1/creator> "Joachim Wackerow" .
+<http://rdf-vocabulary.ddialliance.org/phdd> <http://purl.org/dc/elements/1.1/creator> "Thomas Bosch" .
+<http://rdf-vocabulary.ddialliance.org/phdd> <http://purl.org/dc/elements/1.1/creator> "Larry Hoyle" .
+<http://rdf-vocabulary.ddialliance.org/phdd> <http://purl.org/dc/elements/1.1/contributor> "Richard Cyganiak" .
+<http://rdf-vocabulary.ddialliance.org/phdd> <http://purl.org/dc/elements/1.1/date> "2014-05-25"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://rdf-vocabulary.ddialliance.org/phdd> <http://www.w3.org/2002/07/owl#versionInfo> "0.1" .
+<http://rdf-vocabulary.ddialliance.org/phdd> <http://creativecommons.org/ns#license> <http://creativecommons.org/licenses/by-nc-sa/3.0/us/> .
+<http://rdf-vocabulary.ddialliance.org/phdd#Table> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://rdf-vocabulary.ddialliance.org/phdd#Table> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://rdf-vocabulary.ddialliance.org/phdd#Table> <http://www.w3.org/2000/01/rdf-schema#label> "Table"@en .
+<http://rdf-vocabulary.ddialliance.org/phdd#Table> <http://www.w3.org/2000/01/rdf-schema#comment> "A table, which could be a rectangular file with character-separated values (CSV) or a rectangular file with fixed record length.\n\n\tThis can be a subclass of \"Distribution\" in Data Catalog Vocabulary (DCAT), see: http://www.w3.org/TR/vocab-dcat/#class-distribution.\n\tThe equivalent class in DDI-RDF Discovery (Disco) is \"DataFile\", see: http://rdf-vocabulary.ddialliance.org/discovery.html#datafile.\n\t\n\tRelated element in DDI 3.2: p:PhysicalDataProduct\n\tDDI 3.2 Documentation:  http://www.ddialliance.org/Specification/DDI-Lifecycle/3.2/XMLSchema/FieldLevelDocumentation/schemas/physicaldataproduct_xsd/elements/PhysicalDataProduct.html\n\t"@en .
+<http://rdf-vocabulary.ddialliance.org/phdd#Table> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/dcat#Distribution> .
+<http://rdf-vocabulary.ddialliance.org/phdd#Table> <http://www.w3.org/2002/07/owl#equivalentClass> <http://rdf-vocabulary.ddialliance.org/discovery#DataFile> .
+_:node18o8vi0ecx2610679 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:node18o8vi0ecx2610679 <http://www.w3.org/2002/07/owl#onProperty> <http://rdf-vocabulary.ddialliance.org/phdd#isDescribedBy> .
+_:node18o8vi0ecx2610679 <http://www.w3.org/2002/07/owl#onClass> <http://rdf-vocabulary.ddialliance.org/phdd#TableDescription> .
+_:node18o8vi0ecx2610679 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:node18o8vi0ecx2610679 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://rdf-vocabulary.ddialliance.org/phdd#Table> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:node18o8vi0ecx2610679 .
+<http://rdf-vocabulary.ddialliance.org/phdd#Table> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://rdf-vocabulary.ddialliance.org/phdd> .
+<http://rdf-vocabulary.ddialliance.org/phdd#Table> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.ddialliance.org/Specification/DDI-Lifecycle/3.2/XMLSchema/FieldLevelDocumentation/schemas/physicaldataproduct_xsd/elements/PhysicalDataProduct.html> .
+<http://rdf-vocabulary.ddialliance.org/phdd#InputProgram> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://rdf-vocabulary.ddialliance.org/phdd#InputProgram> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://rdf-vocabulary.ddialliance.org/phdd#InputProgram> <http://www.w3.org/2000/01/rdf-schema#label> "Input Program"@en .
+<http://rdf-vocabulary.ddialliance.org/phdd#InputProgram> <http://www.w3.org/2000/01/rdf-schema#comment> "Program or program statements for reading the data.\n\n\tRelated element in DDI 3.2: r:CommandFile\n\tDDI 3.2 Documentation: http://www.ddialliance.org/Specification/DDI-Lifecycle/3.2/XMLSchema/FieldLevelDocumentation/schemas/reusable_xsd/elements/CommandFile.html\n\t"@en .
+_:node18o8vi0ecx2610680 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:node18o8vi0ecx2610681 <http://www.w3.org/2002/07/owl#inverseOf> <http://rdf-vocabulary.ddialliance.org/phdd#inputProgram> .
+_:node18o8vi0ecx2610680 <http://www.w3.org/2002/07/owl#onProperty> _:node18o8vi0ecx2610681 .
+_:node18o8vi0ecx2610680 <http://www.w3.org/2002/07/owl#onClass> <http://rdf-vocabulary.ddialliance.org/phdd#TableDescription> .
+_:node18o8vi0ecx2610680 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://rdf-vocabulary.ddialliance.org/phdd#InputProgram> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:node18o8vi0ecx2610680 .
+<http://rdf-vocabulary.ddialliance.org/phdd#InputProgram> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://rdf-vocabulary.ddialliance.org/phdd> .
+<http://rdf-vocabulary.ddialliance.org/phdd#InputProgram> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.ddialliance.org/Specification/DDI-Lifecycle/3.2/XMLSchema/FieldLevelDocumentation/schemas/reusable_xsd/elements/CommandFile.html> .
+<http://rdf-vocabulary.ddialliance.org/phdd#TableDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://rdf-vocabulary.ddialliance.org/phdd#TableDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://rdf-vocabulary.ddialliance.org/phdd#TableDescription> <http://www.w3.org/2000/01/rdf-schema#label> "Table Description"@en .
+<http://rdf-vocabulary.ddialliance.org/phdd#TableDescription> <http://www.w3.org/2000/01/rdf-schema#comment> "Description of a table by significant parameters."@en .
+<http://rdf-vocabulary.ddialliance.org/phdd#TableDescription> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://rdf-vocabulary.ddialliance.org/phdd> .
+<http://rdf-vocabulary.ddialliance.org/phdd#TableStructure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://rdf-vocabulary.ddialliance.org/phdd#TableStructure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://rdf-vocabulary.ddialliance.org/phdd#TableStructure> <http://www.w3.org/2000/01/rdf-schema#label> "Table Structure"@en .
+<http://rdf-vocabulary.ddialliance.org/phdd#TableStructure> <http://www.w3.org/2000/01/rdf-schema#comment> "The table properties described by default parameters of the data values."@en .
+<http://rdf-vocabulary.ddialliance.org/phdd#TableStructure> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://rdf-vocabulary.ddialliance.org/phdd> .
+<http://rdf-vocabulary.ddialliance.org/phdd#FixedRecordLength> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://rdf-vocabulary.ddialliance.org/phdd#FixedRecordLength> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://rdf-vocabulary.ddialliance.org/phdd#FixedRecordLength> <http://www.w3.org/2000/01/rdf-schema#label> "Fixed record length"@en .
+<http://rdf-vocabulary.ddialliance.org/phdd#FixedRecordLength> <http://www.w3.org/2000/01/rdf-schema#comment> "Detailed description of a table with fixed record length additionally to the common properties in \"TableStructure\"."@en .
+<http://rdf-vocabulary.ddialliance.org/phdd#FixedRecordLength> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://rdf-vocabulary.ddialliance.org/phdd> .
+<http://rdf-vocabulary.ddialliance.org/phdd#FixedRecordLength> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rdf-vocabulary.ddialliance.org/phdd#TableStructure> .
+<http://rdf-vocabulary.ddialliance.org/phdd#Delimited> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://rdf-vocabulary.ddialliance.org/phdd#Delimited> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://rdf-vocabulary.ddialliance.org/phdd#Delimited> <http://www.w3.org/2000/01/rdf-schema#label> "Delimited"@en .
+<http://rdf-vocabulary.ddialliance.org/phdd#Delimited> <http://www.w3.org/2000/01/rdf-schema#comment> "Detailed description of a table with character-separated values additionally to the common properties in \"TableStructure\"."@en .
+<http://rdf-vocabulary.ddialliance.org/phdd#Delimited> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://rdf-vocabulary.ddialliance.org/phdd> .
+<http://rdf-vocabulary.ddialliance.org/phdd#Delimited> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rdf-vocabulary.ddialliance.org/phdd#TableStructure> .
+<http://rdf-vocabulary.ddialliance.org/phdd#Column> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://rdf-vocabulary.ddialliance.org/phdd#Column> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://rdf-vocabulary.ddialliance.org/phdd#Column> <http://www.w3.org/2000/01/rdf-schema#label> "Column"@en .
+<http://rdf-vocabulary.ddialliance.org/phdd#Column> <http://www.w3.org/2000/01/rdf-schema#comment> "\n\tA column of a table. Other terms are variable or data item.\n\n\tEquivalent class in Disco: Variable\n\tDisco documentation: http://rdf-vocabulary.ddialliance.org/discovery.html#variable-and-variable-definition\n\tEquivalent element in DDI 3.2: l:Variable\n\tDDI 3.2 Documentation:  http://www.ddialliance.org/Specification/DDI-Lifecycle/3.2/XMLSchema/FieldLevelDocumentation/schemas/logicalproduct_xsd/elements/Variable.html\n\t"@en .
+<http://rdf-vocabulary.ddialliance.org/phdd#Column> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://rdf-vocabulary.ddialliance.org/phdd> .
+<http://rdf-vocabulary.ddialliance.org/phdd#Column> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ddialliance.org/Specification/DDI-Lifecycle/3.2/XMLSchema/FieldLevelDocumentation/schemas/logicalproduct_xsd/elements/Variable.html> .
+<http://rdf-vocabulary.ddialliance.org/phdd#Column> <http://www.w3.org/2002/07/owl#equivalentClass> <http://rdf-vocabulary.ddialliance.org/discovery#Variable> .
+<http://rdf-vocabulary.ddialliance.org/phdd#ColumnDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://rdf-vocabulary.ddialliance.org/phdd#ColumnDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://rdf-vocabulary.ddialliance.org/phdd#ColumnDescription> <http://www.w3.org/2000/01/rdf-schema#label> "Column description"@en .
+<http://rdf-vocabulary.ddialliance.org/phdd#ColumnDescription> <http://www.w3.org/2000/01/rdf-schema#comment> "\n\tDetailed description of a column. It comprehends common properties of delimited column and fixed column data.\n\t"@en .
+<http://rdf-vocabulary.ddialliance.org/phdd#ColumnDescription> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://rdf-vocabulary.ddialliance.org/phdd> .
+<http://rdf-vocabulary.ddialliance.org/phdd#DelimitedColumnDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://rdf-vocabulary.ddialliance.org/phdd#DelimitedColumnDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://rdf-vocabulary.ddialliance.org/phdd#DelimitedColumnDescription> <http://www.w3.org/2000/01/rdf-schema#label> "Delimited column description"@en .
+<http://rdf-vocabulary.ddialliance.org/phdd#DelimitedColumnDescription> <http://www.w3.org/2000/01/rdf-schema#comment> "Detailed description of a column in CSV data additionally to the common properties in \"ColumnDescription\"."@en .
+<http://rdf-vocabulary.ddialliance.org/phdd#DelimitedColumnDescription> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://rdf-vocabulary.ddialliance.org/phdd> .
+<http://rdf-vocabulary.ddialliance.org/phdd#DelimitedColumnDescription> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rdf-vocabulary.ddialliance.org/phdd#ColumnDescription> .
+<http://rdf-vocabulary.ddialliance.org/phdd#FixedColumnDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://rdf-vocabulary.ddialliance.org/phdd#FixedColumnDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://rdf-vocabulary.ddialliance.org/phdd#FixedColumnDescription> <http://www.w3.org/2000/01/rdf-schema#label> "fixed column description"@en .
+<http://rdf-vocabulary.ddialliance.org/phdd#FixedColumnDescription> <http://www.w3.org/2000/01/rdf-schema#comment> "Detailed description of a column in fixed record length data in addition to the common properties in \"ColumnDescription\"."@en .
+<http://rdf-vocabulary.ddialliance.org/phdd#FixedColumnDescription> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://rdf-vocabulary.ddialliance.org/phdd> .
+<http://rdf-vocabulary.ddialliance.org/phdd#FixedColumnDescription> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rdf-vocabulary.ddialliance.org/phdd#ColumnDescription> .
+<http://rdf-vocabulary.ddialliance.org/phdd#programFileName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://rdf-vocabulary.ddialliance.org/phdd#programFileName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://rdf-vocabulary.ddialliance.org/phdd#programFileName> <http://www.w3.org/2000/01/rdf-schema#label> "Program file name"@en .
+<http://rdf-vocabulary.ddialliance.org/phdd#programFileName> <http://www.w3.org/2000/01/rdf-schema#comment> "File name or URI of the input program."@en .
+<http://rdf-vocabulary.ddialliance.org/phdd#programFileName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://rdf-vocabulary.ddialliance.org/phdd#InputProgram> .
+<http://rdf-vocabulary.ddialliance.org/phdd#programFileName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://rdf-vocabulary.ddialliance.org/phdd#programFileName> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://rdf-vocabulary.ddialliance.org/phdd> .
+<http://rdf-vocabulary.ddialliance.org/phdd#softwareType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://rdf-vocabulary.ddialliance.org/phdd#softwareType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://rdf-vocabulary.ddialliance.org/phdd#softwareType> <http://www.w3.org/2000/01/rdf-schema#label> "Software type"@en .
+<http://rdf-vocabulary.ddialliance.org/phdd#softwareType> <http://www.w3.org/2000/01/rdf-schema#comment> "\n\tSoftware or program language used of the program for reading the data.\n\n\tEquivalent element in DDI 3.2: r:ProgramLanguage\n\tDDI 3.2 Documentation: http://www.ddialliance.org/Specification/DDI-Lifecycle/3.2/XMLSchema/FieldLevelDocumentation/schemas/reusable_xsd/elements/ProgramLanguage.html\n\t"@en .
+<http://rdf-vocabulary.ddialliance.org/phdd#softwareType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://rdf-vocabulary.ddialliance.org/phdd#InputProgram> .
+<http://rdf-vocabulary.ddialliance.org/phdd#softwareType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://rdf-vocabulary.ddialliance.org/phdd#softwareType> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://rdf-vocabulary.ddialliance.org/phdd> .
+<http://rdf-vocabulary.ddialliance.org/phdd#programVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://rdf-vocabulary.ddialliance.org/phdd#programVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://rdf-vocabulary.ddialliance.org/phdd#programVersion> <http://www.w3.org/2000/01/rdf-schema#label> "Program version"@en .
+<http://rdf-vocabulary.ddialliance.org/phdd#programVersion> <http://www.w3.org/2000/01/rdf-schema#comment> "Version of the software used of the program for reading the data."@en .
+<http://rdf-vocabulary.ddialliance.org/phdd#programVersion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://rdf-vocabulary.ddialliance.org/phdd#InputProgram> .
+<http://rdf-vocabulary.ddialliance.org/phdd#programVersion> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://rdf-vocabulary.ddialliance.org/phdd#programVersion> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://rdf-vocabulary.ddialliance.org/phdd> .
+<http://rdf-vocabulary.ddialliance.org/phdd#caseQuantity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://rdf-vocabulary.ddialliance.org/phdd#caseQuantity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://rdf-vocabulary.ddialliance.org/phdd#caseQuantity> <http://www.w3.org/2000/01/rdf-schema#label> "Case quantity"@en .
+<http://rdf-vocabulary.ddialliance.org/phdd#caseQuantity> <http://www.w3.org/2000/01/rdf-schema#comment> "\n\tNumber of cases or observations in the table.\n\n\tEquivalent element in DDI 3.2: pi:CaseQuantity\n\tDDI 3.2 Documentation: http://www.ddialliance.org/Specification/DDI-Lifecycle/3.2/XMLSchema/FieldLevelDocumentation/schemas/physicalinstance_xsd/elements/CaseQuantity.html\n\t"@en .
+<http://rdf-vocabulary.ddialliance.org/phdd#caseQuantity> <http://www.w3.org/2000/01/rdf-schema#domain> <http://rdf-vocabulary.ddialliance.org/phdd#TableDescription> .
+<http://rdf-vocabulary.ddialliance.org/phdd#caseQuantity> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://rdf-vocabulary.ddialliance.org/phdd#caseQuantity> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://rdf-vocabulary.ddialliance.org/phdd> .
+<http://rdf-vocabulary.ddialliance.org/phdd#caseQuantity> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ddialliance.org/Specification/DDI-Lifecycle/3.2/XMLSchema/FieldLevelDocumentation/schemas/physicalinstance_xsd/elements/CaseQuantity.html> .
+<http://rdf-vocabulary.ddialliance.org/phdd#fileName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://rdf-vocabulary.ddialliance.org/phdd#fileName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://rdf-vocabulary.ddialliance.org/phdd#fileName> <http://www.w3.org/2000/01/rdf-schema#label> "File name"@en .
+<http://rdf-vocabulary.ddialliance.org/phdd#fileName> <http://www.w3.org/2000/01/rdf-schema#comment> "\n\tThe file name or URI of the table.\t\n\n\tEquivalent element in DDI 3.2: pi:DataFileIdentification\n\tDDI 3.2 Documentation: http://www.ddialliance.org/Specification/DDI-Lifecycle/3.2/XMLSchema/FieldLevelDocumentation/schemas/physicalinstance_xsd/elements/DataFileIdentification.html\n\t"@en .
+<http://rdf-vocabulary.ddialliance.org/phdd#fileName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://rdf-vocabulary.ddialliance.org/phdd#TableDescription> .
+_:node18o8vi0ecx2610682 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:node18o8vi0ecx2610683 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://rdf-vocabulary.ddialliance.org/phdd#TableDescription> .
+_:node18o8vi0ecx2610683 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:node18o8vi0ecx2610684 .
+_:node18o8vi0ecx2610684 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://rdf-vocabulary.ddialliance.org/phdd#InputProgram> .
+_:node18o8vi0ecx2610684 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:node18o8vi0ecx2610682 <http://www.w3.org/2002/07/owl#unionOf> _:node18o8vi0ecx2610683 .
+<http://rdf-vocabulary.ddialliance.org/phdd#fileName> <http://www.w3.org/2000/01/rdf-schema#range> _:node18o8vi0ecx2610682 .
+<http://rdf-vocabulary.ddialliance.org/phdd#fileName> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://rdf-vocabulary.ddialliance.org/phdd> .
+<http://rdf-vocabulary.ddialliance.org/phdd#recordsPerCase> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://rdf-vocabulary.ddialliance.org/phdd#recordsPerCase> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://rdf-vocabulary.ddialliance.org/phdd#recordsPerCase> <http://www.w3.org/2000/01/rdf-schema#label> "Records per case"@en .
+<http://rdf-vocabulary.ddialliance.org/phdd#recordsPerCase> <http://www.w3.org/2000/01/rdf-schema#comment> "The number of records per case. Multiple records could represent one case. The default is 1."@en .
+<http://rdf-vocabulary.ddialliance.org/phdd#recordsPerCase> <http://www.w3.org/2000/01/rdf-schema#domain> <http://rdf-vocabulary.ddialliance.org/phdd#TableDescription> .
+<http://rdf-vocabulary.ddialliance.org/phdd#recordsPerCase> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#positiveInteger> .
+<http://rdf-vocabulary.ddialliance.org/phdd#recordsPerCase> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://rdf-vocabulary.ddialliance.org/phdd> .
+<http://rdf-vocabulary.ddialliance.org/phdd#overallRecordCount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://rdf-vocabulary.ddialliance.org/phdd#overallRecordCount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://rdf-vocabulary.ddialliance.org/phdd#overallRecordCount> <http://www.w3.org/2000/01/rdf-schema#label> "Overall record count"@en .
+<http://rdf-vocabulary.ddialliance.org/phdd#overallRecordCount> <http://www.w3.org/2000/01/rdf-schema#comment> "\n\tOverall record count in the table.\n\n\tEquivalent element in DDI 3.2: pi:OverallRecordCount\n\tDDI 3.2 Documentation: http://www.ddialliance.org/Specification/DDI-Lifecycle/3.2/XMLSchema/FieldLevelDocumentation/schemas/physicalinstance_xsd/elements/OverallRecordCount.html\n\t"@en .
+<http://rdf-vocabulary.ddialliance.org/phdd#overallRecordCount> <http://www.w3.org/2000/01/rdf-schema#domain> <http://rdf-vocabulary.ddialliance.org/phdd#TableDescription> .
+<http://rdf-vocabulary.ddialliance.org/phdd#overallRecordCount> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://rdf-vocabulary.ddialliance.org/phdd#overallRecordCount> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://rdf-vocabulary.ddialliance.org/phdd> .
+<http://rdf-vocabulary.ddialliance.org/phdd#overallRecordCount> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ddialliance.org/Specification/DDI-Lifecycle/3.2/XMLSchema/FieldLevelDocumentation/schemas/physicalinstance_xsd/elements/OverallRecordCount.html> .
+<http://rdf-vocabulary.ddialliance.org/phdd#recordLength> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://rdf-vocabulary.ddialliance.org/phdd#recordLength> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://rdf-vocabulary.ddialliance.org/phdd#recordLength> <http://www.w3.org/2000/01/rdf-schema#label> "Record length"@en .
+<http://rdf-vocabulary.ddialliance.org/phdd#recordLength> <http://www.w3.org/2000/01/rdf-schema#comment> "The length of a record with fixed length."@en .
+<http://rdf-vocabulary.ddialliance.org/phdd#recordLength> <http://www.w3.org/2000/01/rdf-schema#domain> <http://rdf-vocabulary.ddialliance.org/phdd#FixedRecordLength> .
+<http://rdf-vocabulary.ddialliance.org/phdd#recordLength> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#nonPositiveInteger> .
+<http://rdf-vocabulary.ddialliance.org/phdd#recordLength> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://rdf-vocabulary.ddialliance.org/phdd> .
+<http://rdf-vocabulary.ddialliance.org/phdd#delimiter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://rdf-vocabulary.ddialliance.org/phdd#delimiter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://rdf-vocabulary.ddialliance.org/phdd#delimiter> <http://www.w3.org/2000/01/rdf-schema#label> "Delimiter"@en .
+<http://rdf-vocabulary.ddialliance.org/phdd#delimiter> <http://www.w3.org/2000/01/rdf-schema#comment> "\n\tDefines the delimiter used to separate variables in a delimited record.\n\n\tEquivalent element in DDI 3.2: p:Delimiter\n\tDDI 3.2 Documentation: http://www.ddialliance.org/Specification/DDI-Lifecycle/3.2/XMLSchema/FieldLevelDocumentation/schemas/physicaldataproduct_xsd/elements/Delimiter.html\n\t"@en .
+<http://rdf-vocabulary.ddialliance.org/phdd#delimiter> <http://www.w3.org/2000/01/rdf-schema#domain> <http://rdf-vocabulary.ddialliance.org/phdd#Delimited> .
+<http://rdf-vocabulary.ddialliance.org/phdd#delimiter> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://rdf-vocabulary.ddialliance.org/phdd#delimiter> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://rdf-vocabulary.ddialliance.org/phdd> .
+<http://rdf-vocabulary.ddialliance.org/phdd#delimiter> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ddialliance.org/Specification/DDI-Lifecycle/3.2/XMLSchema/FieldLevelDocumentation/schemas/physicaldataproduct_xsd/elements/Delimiter.html> .
+<http://rdf-vocabulary.ddialliance.org/phdd#textQualifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://rdf-vocabulary.ddialliance.org/phdd#textQualifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://rdf-vocabulary.ddialliance.org/phdd#textQualifier> <http://www.w3.org/2000/01/rdf-schema#label> "text qualifier"@en .
+<http://rdf-vocabulary.ddialliance.org/phdd#textQualifier> <http://www.w3.org/2000/01/rdf-schema#comment> "\n\tUse for delimited files to designate the which text qualifier, if any, was used. Valid values include: single quote, double quote, and none.\n\n\tEquivalent element in DDI 3.2: p:RecordLayout/@textQualifier\n\tDDI 3.2 Documentation: http://www.ddialliance.org/Specification/DDI-Lifecycle/3.2/XMLSchema/FieldLevelDocumentation/schemas/physicaldataproduct_xsd/complexTypes/BaseRecordLayoutType.html#a5\n\t"@en .
+<http://rdf-vocabulary.ddialliance.org/phdd#textQualifier> <http://www.w3.org/2000/01/rdf-schema#domain> <http://rdf-vocabulary.ddialliance.org/phdd#Delimited> .
+<http://rdf-vocabulary.ddialliance.org/phdd#textQualifier> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://rdf-vocabulary.ddialliance.org/phdd#textQualifier> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://rdf-vocabulary.ddialliance.org/phdd> .
+<http://rdf-vocabulary.ddialliance.org/phdd#textQualifier> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ddialliance.org/Specification/DDI-Lifecycle/3.2/XMLSchema/FieldLevelDocumentation/schemas/physicaldataproduct_xsd/complexTypes/BaseRecordLayoutType.html#a5> .
+<http://rdf-vocabulary.ddialliance.org/phdd#consecutiveDelimitersAsOne> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://rdf-vocabulary.ddialliance.org/phdd#consecutiveDelimitersAsOne> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://rdf-vocabulary.ddialliance.org/phdd#consecutiveDelimitersAsOne> <http://www.w3.org/2000/01/rdf-schema#label> "consecutive delimiters as one"@en .
+<http://rdf-vocabulary.ddialliance.org/phdd#consecutiveDelimitersAsOne> <http://www.w3.org/2000/01/rdf-schema#comment> "\n\tIndicates how consecutive delimiters should be handed by the software.\n\n\tEquivalent element in DDI 3.2: p:Delimiter/@treatConsecutiveDelimiterAsOne\n\tDDI 3.2 Documentation: http://www.ddialliance.org/Specification/DDI-Lifecycle/3.2/XMLSchema/FieldLevelDocumentation/schemas/reusable_xsd/complexTypes/DelimiterType.html#a6\n\t"@en .
+<http://rdf-vocabulary.ddialliance.org/phdd#consecutiveDelimitersAsOne> <http://www.w3.org/2000/01/rdf-schema#domain> <http://rdf-vocabulary.ddialliance.org/phdd#Delimited> .
+<http://rdf-vocabulary.ddialliance.org/phdd#consecutiveDelimitersAsOne> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://rdf-vocabulary.ddialliance.org/phdd#consecutiveDelimitersAsOne> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://rdf-vocabulary.ddialliance.org/phdd> .
+<http://rdf-vocabulary.ddialliance.org/phdd#consecutiveDelimitersAsOne> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ddialliance.org/Specification/DDI-Lifecycle/3.2/XMLSchema/FieldLevelDocumentation/schemas/reusable_xsd/complexTypes/DelimiterType.html#a6> .
+<http://rdf-vocabulary.ddialliance.org/phdd#namesOnFirstRow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://rdf-vocabulary.ddialliance.org/phdd#namesOnFirstRow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://rdf-vocabulary.ddialliance.org/phdd#namesOnFirstRow> <http://www.w3.org/2000/01/rdf-schema#label> "Names on first row"@en .
+<http://rdf-vocabulary.ddialliance.org/phdd#namesOnFirstRow> <http://www.w3.org/2000/01/rdf-schema#comment> "\n\tIndicates if the first row of the table contains the names of the columns. Default is true.\n\n\tEquivalent element in DDI 3.2: p:RecordLayout/@namesOnFirstRow\n\tDDI 3.2 Documentation: http://www.ddialliance.org/Specification/DDI-Lifecycle/3.2/XMLSchema/FieldLevelDocumentation/schemas/physicaldataproduct_xsd/complexTypes/RecordLayoutType.html#a5\n\t"@en .
+<http://rdf-vocabulary.ddialliance.org/phdd#namesOnFirstRow> <http://www.w3.org/2000/01/rdf-schema#domain> <http://rdf-vocabulary.ddialliance.org/phdd#Delimited> .
+<http://rdf-vocabulary.ddialliance.org/phdd#namesOnFirstRow> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://rdf-vocabulary.ddialliance.org/phdd#namesOnFirstRow> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://rdf-vocabulary.ddialliance.org/phdd> .
+<http://rdf-vocabulary.ddialliance.org/phdd#namesOnFirstRow> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ddialliance.org/Specification/DDI-Lifecycle/3.2/XMLSchema/FieldLevelDocumentation/schemas/physicaldataproduct_xsd/complexTypes/RecordLayoutType.html#a5> .
+<http://rdf-vocabulary.ddialliance.org/phdd#firstDataLine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://rdf-vocabulary.ddialliance.org/phdd#firstDataLine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://rdf-vocabulary.ddialliance.org/phdd#firstDataLine> <http://www.w3.org/2000/01/rdf-schema#label> "First data line"@en .
+<http://rdf-vocabulary.ddialliance.org/phdd#firstDataLine> <http://www.w3.org/2000/01/rdf-schema#comment> "First line where the data start. Default is 2."@en .
+<http://rdf-vocabulary.ddialliance.org/phdd#firstDataLine> <http://www.w3.org/2000/01/rdf-schema#domain> <http://rdf-vocabulary.ddialliance.org/phdd#Delimited> .
+<http://rdf-vocabulary.ddialliance.org/phdd#firstDataLine> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#positiveInteger> .
+<http://rdf-vocabulary.ddialliance.org/phdd#firstDataLine> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://rdf-vocabulary.ddialliance.org/phdd> .
+<http://rdf-vocabulary.ddialliance.org/phdd#defaultDecimalSeparator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://rdf-vocabulary.ddialliance.org/phdd#defaultDecimalSeparator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://rdf-vocabulary.ddialliance.org/phdd#defaultDecimalSeparator> <http://www.w3.org/2000/01/rdf-schema#label> "Default decimal separator"@en .
+<http://rdf-vocabulary.ddialliance.org/phdd#defaultDecimalSeparator> <http://www.w3.org/2000/01/rdf-schema#comment> "\n\tThe character used to separate whole numbers from decimals expressed as a one character string.\n\n\tEquivalent element in DDI 3.2: r:DefaultDecimalSeparator\n\tDDI 3.2 Documentation: http://www.ddialliance.org/Specification/DDI-Lifecycle/3.2/XMLSchema/FieldLevelDocumentation/schemas/reusable_xsd/elements/DefaultDecimalSeparator.html\n\t"@en .
+<http://rdf-vocabulary.ddialliance.org/phdd#defaultDecimalSeparator> <http://www.w3.org/2000/01/rdf-schema#domain> <http://rdf-vocabulary.ddialliance.org/phdd#TableStructure> .
+<http://rdf-vocabulary.ddialliance.org/phdd#defaultDecimalSeparator> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://rdf-vocabulary.ddialliance.org/phdd#defaultDecimalSeparator> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ddialliance.org/Specification/DDI-Lifecycle/3.2/XMLSchema/FieldLevelDocumentation/schemas/reusable_xsd/elements/DefaultDecimalSeparator.html> .
+<http://rdf-vocabulary.ddialliance.org/phdd#defaultDecimalSeparator> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://rdf-vocabulary.ddialliance.org/phdd> .
+<http://rdf-vocabulary.ddialliance.org/phdd#defaultDigitGroupSeparator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://rdf-vocabulary.ddialliance.org/phdd#defaultDigitGroupSeparator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://rdf-vocabulary.ddialliance.org/phdd#defaultDigitGroupSeparator> <http://www.w3.org/2000/01/rdf-schema#label> "default digit group separator"@en .
+<http://rdf-vocabulary.ddialliance.org/phdd#defaultDigitGroupSeparator> <http://www.w3.org/2000/01/rdf-schema#comment> "\n\tThe character used to separate the component of whole numbers (thousands, millions, etc.) expressed as a one character string.\n\n\tEquivalent element in DDI 3.2: r:DefaultDigitGroupSeparator\n\tDDI 3.2 Documentation: http://www.ddialliance.org/Specification/DDI-Lifecycle/3.2/XMLSchema/FieldLevelDocumentation/schemas/reusable_xsd/elements/DefaultDigitGroupSeparator.html\n\t"@en .
+<http://rdf-vocabulary.ddialliance.org/phdd#defaultDigitGroupSeparator> <http://www.w3.org/2000/01/rdf-schema#domain> <http://rdf-vocabulary.ddialliance.org/phdd#TableStructure> .
+<http://rdf-vocabulary.ddialliance.org/phdd#defaultDigitGroupSeparator> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://rdf-vocabulary.ddialliance.org/phdd#defaultDigitGroupSeparator> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://rdf-vocabulary.ddialliance.org/phdd> .
+<http://rdf-vocabulary.ddialliance.org/phdd#defaultDigitGroupSeparator> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ddialliance.org/Specification/DDI-Lifecycle/3.2/XMLSchema/FieldLevelDocumentation/schemas/reusable_xsd/elements/DefaultDigitGroupSeparator.html> .
+<http://rdf-vocabulary.ddialliance.org/phdd#defaultDecimalPositions> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://rdf-vocabulary.ddialliance.org/phdd#defaultDecimalPositions> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://rdf-vocabulary.ddialliance.org/phdd#defaultDecimalPositions> <http://www.w3.org/2000/01/rdf-schema#label> "Default decimal positions"@en .
+<http://rdf-vocabulary.ddialliance.org/phdd#defaultDecimalPositions> <http://www.w3.org/2000/01/rdf-schema#comment> "\n\tNumber of decimal places for data values with an implied decimal separator. It applies to the whole table. Another expression is decimal scaling factor. Default is 0.\n\n\tEquivalent element in DDI 3.2: r:DefaultDecimalPositions\n\tDDI 3.2 Documentation: http://www.ddialliance.org/Specification/DDI-Lifecycle/3.2/XMLSchema/FieldLevelDocumentation/schemas/reusable_xsd/elements/DefaultDecimalPositions.html\n\t"@en .
+<http://rdf-vocabulary.ddialliance.org/phdd#defaultDecimalPositions> <http://www.w3.org/2000/01/rdf-schema#domain> <http://rdf-vocabulary.ddialliance.org/phdd#TableStructure> .
+<http://rdf-vocabulary.ddialliance.org/phdd#defaultDecimalPositions> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#positiveInteger> .
+<http://rdf-vocabulary.ddialliance.org/phdd#defaultDecimalPositions> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://rdf-vocabulary.ddialliance.org/phdd> .
+<http://rdf-vocabulary.ddialliance.org/phdd#defaultDecimalPositions> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ddialliance.org/Specification/DDI-Lifecycle/3.2/XMLSchema/FieldLevelDocumentation/schemas/reusable_xsd/elements/DefaultDecimalPositions.html> .
+<http://rdf-vocabulary.ddialliance.org/phdd#newLine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://rdf-vocabulary.ddialliance.org/phdd#newLine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://rdf-vocabulary.ddialliance.org/phdd#newLine> <http://www.w3.org/2000/01/rdf-schema#label> "New line"@en .
+<http://rdf-vocabulary.ddialliance.org/phdd#newLine> <http://www.w3.org/2000/01/rdf-schema#comment> "\n\tSpecifies the end-of-line (EOL) marker used in the file as produced. If no value is provided assume the use of a CRLF (carriage return and line feed)\n\n\tEquivalent element in DDI 3.2: p:EndOfLineMarker\n\tDDI 3.2 Documentation: http://www.ddialliance.org/Specification/DDI-Lifecycle/3.2/XMLSchema/FieldLevelDocumentation/schemas/physicaldataproduct_xsd/elements/EndOfLineMarker.html\n\t"@en .
+<http://rdf-vocabulary.ddialliance.org/phdd#newLine> <http://www.w3.org/2000/01/rdf-schema#domain> <http://rdf-vocabulary.ddialliance.org/phdd#TableStructure> .
+<http://rdf-vocabulary.ddialliance.org/phdd#newLine> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://rdf-vocabulary.ddialliance.org/phdd#newLine> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://rdf-vocabulary.ddialliance.org/phdd> .
+<http://rdf-vocabulary.ddialliance.org/phdd#newLine> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ddialliance.org/Specification/DDI-Lifecycle/3.2/XMLSchema/FieldLevelDocumentation/schemas/physicaldataproduct_xsd/elements/EndOfLineMarker.html> .
+<http://rdf-vocabulary.ddialliance.org/phdd#columnPosition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://rdf-vocabulary.ddialliance.org/phdd#columnPosition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://rdf-vocabulary.ddialliance.org/phdd#columnPosition> <http://www.w3.org/2000/01/rdf-schema#label> "Column position"@en .
+<http://rdf-vocabulary.ddialliance.org/phdd#columnPosition> <http://www.w3.org/2000/01/rdf-schema#comment> "\n\tPosition number of the column for delimited records.\n\t\n\tEquivalent element in DDI 3.2: ArrayPosition\n\tDDI 3.2 Documentation: http://www.ddialliance.org/Specification/DDI-Lifecycle/3.2/XMLSchema/FieldLevelDocumentation/schemas/physicaldataproduct_xsd/elements/ArrayPosition.html\n\t"@en .
+<http://rdf-vocabulary.ddialliance.org/phdd#columnPosition> <http://www.w3.org/2000/01/rdf-schema#domain> <http://rdf-vocabulary.ddialliance.org/phdd#DelimitedColumnDescription> .
+<http://rdf-vocabulary.ddialliance.org/phdd#columnPosition> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#positiveInteger> .
+<http://rdf-vocabulary.ddialliance.org/phdd#columnPosition> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://rdf-vocabulary.ddialliance.org/phdd> .
+<http://rdf-vocabulary.ddialliance.org/phdd#columnPosition> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ddialliance.org/Specification/DDI-Lifecycle/3.2/XMLSchema/FieldLevelDocumentation/schemas/physicaldataproduct_xsd/elements/ArrayPosition.html> .
+<http://rdf-vocabulary.ddialliance.org/phdd#recommendedDataType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://rdf-vocabulary.ddialliance.org/phdd#recommendedDataType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://rdf-vocabulary.ddialliance.org/phdd#recommendedDataType> <http://www.w3.org/2000/01/rdf-schema#label> "Recommended data type"@en .
+<http://rdf-vocabulary.ddialliance.org/phdd#recommendedDataType> <http://www.w3.org/2000/01/rdf-schema#comment> "\n\tThe data type as recommended by the data producer.\n\n\tEquivalent element in DDI 3.2: r:RecommendedDataType\n\tDDI 3.2 Documentation: http://www.ddialliance.org/Specification/DDI-Lifecycle/3.2/XMLSchema/FieldLevelDocumentation/schemas/reusable_xsd/elements/RecommendedDataType.html\n\t"@en .
+<http://rdf-vocabulary.ddialliance.org/phdd#recommendedDataType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://rdf-vocabulary.ddialliance.org/phdd#ColumnDescription> .
+<http://rdf-vocabulary.ddialliance.org/phdd#recommendedDataType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://rdf-vocabulary.ddialliance.org/phdd#recommendedDataType> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://rdf-vocabulary.ddialliance.org/phdd> .
+<http://rdf-vocabulary.ddialliance.org/phdd#recommendedDataType> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ddialliance.org/Specification/DDI-Lifecycle/3.2/XMLSchema/FieldLevelDocumentation/schemas/reusable_xsd/elements/RecommendedDataType.html> .
+<http://rdf-vocabulary.ddialliance.org/phdd#decimalPositions> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://rdf-vocabulary.ddialliance.org/phdd#decimalPositions> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://rdf-vocabulary.ddialliance.org/phdd#decimalPositions> <http://www.w3.org/2000/01/rdf-schema#label> "Decimal positions"@en .
+<http://rdf-vocabulary.ddialliance.org/phdd#decimalPositions> <http://www.w3.org/2000/01/rdf-schema#comment> "\n\tNumber of decimal places for data values with an implied decimal separator. Another expression is decimal scaling factor. Default is 0.\n\n\tEquivalent element in DDI 3.2: p:DecimalPositions\n\tDDI 3.2 Documentation: http://www.ddialliance.org/Specification/DDI-Lifecycle/3.2/XMLSchema/FieldLevelDocumentation/schemas/physicaldataproduct_xsd/elements/DecimalPositions.html\n\t"@en .
+<http://rdf-vocabulary.ddialliance.org/phdd#decimalPositions> <http://www.w3.org/2000/01/rdf-schema#domain> <http://rdf-vocabulary.ddialliance.org/phdd#ColumnDescription> .
+<http://rdf-vocabulary.ddialliance.org/phdd#decimalPositions> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#positiveInteger> .
+<http://rdf-vocabulary.ddialliance.org/phdd#decimalPositions> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://rdf-vocabulary.ddialliance.org/phdd> .
+<http://rdf-vocabulary.ddialliance.org/phdd#decimalPositions> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ddialliance.org/Specification/DDI-Lifecycle/3.2/XMLSchema/FieldLevelDocumentation/schemas/physicaldataproduct_xsd/elements/DecimalPositions.html> .
+<http://rdf-vocabulary.ddialliance.org/phdd#recordNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://rdf-vocabulary.ddialliance.org/phdd#recordNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://rdf-vocabulary.ddialliance.org/phdd#recordNumber> <http://www.w3.org/2000/01/rdf-schema#label> "Record number"@en .
+<http://rdf-vocabulary.ddialliance.org/phdd#recordNumber> <http://www.w3.org/2000/01/rdf-schema#comment> "\n\tThe record number where this data item (\"Column\") is included. This applies only to tables with cases using multiple records. Default is 1.\n\n\tRelated element in DDI 3.2: p:PhysicalRecordSegment/@segmentOrder\n\tDDI 3.2 Documentation: http://www.ddialliance.org/Specification/DDI-Lifecycle/3.2/XMLSchema/FieldLevelDocumentation/schemas/physicaldataproduct_xsd/complexTypes/PhysicalRecordSegmentType.html#a6\n\t"@en .
+<http://rdf-vocabulary.ddialliance.org/phdd#recordNumber> <http://www.w3.org/2000/01/rdf-schema#domain> <http://rdf-vocabulary.ddialliance.org/phdd#ColumnDescription> .
+<http://rdf-vocabulary.ddialliance.org/phdd#recordNumber> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#positiveInteger> .
+<http://rdf-vocabulary.ddialliance.org/phdd#recordNumber> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://rdf-vocabulary.ddialliance.org/phdd> .
+<http://rdf-vocabulary.ddialliance.org/phdd#recordNumber> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ddialliance.org/Specification/DDI-Lifecycle/3.2/XMLSchema/FieldLevelDocumentation/schemas/physicaldataproduct_xsd/complexTypes/PhysicalRecordSegmentType.html#a6> .
+<http://rdf-vocabulary.ddialliance.org/phdd#startPosition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://rdf-vocabulary.ddialliance.org/phdd#startPosition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://rdf-vocabulary.ddialliance.org/phdd#startPosition> <http://www.w3.org/2000/01/rdf-schema#label> "Start position"@en .
+<http://rdf-vocabulary.ddialliance.org/phdd#startPosition> <http://www.w3.org/2000/01/rdf-schema#comment> "\n\tPosition of the first character of the column in a table with fixed record length.\n\n\tEquivalent element in DDI 3.2: p:StartPosition\n\tDDI 3.2 Documentation: http://www.ddialliance.org/Specification/DDI-Lifecycle/3.2/XMLSchema/FieldLevelDocumentation/schemas/physicaldataproduct_xsd/elements/StartPosition.html\n\t"@en .
+<http://rdf-vocabulary.ddialliance.org/phdd#startPosition> <http://www.w3.org/2000/01/rdf-schema#domain> <http://rdf-vocabulary.ddialliance.org/phdd#ColumnDescription> .
+<http://rdf-vocabulary.ddialliance.org/phdd#startPosition> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#positiveInteger> .
+<http://rdf-vocabulary.ddialliance.org/phdd#startPosition> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://rdf-vocabulary.ddialliance.org/phdd> .
+<http://rdf-vocabulary.ddialliance.org/phdd#startPosition> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ddialliance.org/Specification/DDI-Lifecycle/3.2/XMLSchema/FieldLevelDocumentation/schemas/physicaldataproduct_xsd/elements/StartPosition.html> .
+<http://rdf-vocabulary.ddialliance.org/phdd#endPosition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://rdf-vocabulary.ddialliance.org/phdd#endPosition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://rdf-vocabulary.ddialliance.org/phdd#endPosition> <http://www.w3.org/2000/01/rdf-schema#label> "End position"@en .
+<http://rdf-vocabulary.ddialliance.org/phdd#endPosition> <http://www.w3.org/2000/01/rdf-schema#comment> "\n\tPosition of the last character of the column in a table with fixed record length. Must be specified if a value for \"width\" is not provided.\n\n\tEquivalent element in DDI 3.2: p:EndPosition\n\tDDI 3.2 Documentation: http://www.ddialliance.org/Specification/DDI-Lifecycle/3.2/XMLSchema/FieldLevelDocumentation/schemas/physicaldataproduct_xsd/elements/EndPosition.html\n\t"@en .
+<http://rdf-vocabulary.ddialliance.org/phdd#endPosition> <http://www.w3.org/2000/01/rdf-schema#domain> <http://rdf-vocabulary.ddialliance.org/phdd#ColumnDescription> .
+<http://rdf-vocabulary.ddialliance.org/phdd#endPosition> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#positiveInteger> .
+<http://rdf-vocabulary.ddialliance.org/phdd#endPosition> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://rdf-vocabulary.ddialliance.org/phdd> .
+<http://rdf-vocabulary.ddialliance.org/phdd#endPosition> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ddialliance.org/Specification/DDI-Lifecycle/3.2/XMLSchema/FieldLevelDocumentation/schemas/physicaldataproduct_xsd/elements/EndPosition.html> .
+<http://rdf-vocabulary.ddialliance.org/phdd#width> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://rdf-vocabulary.ddialliance.org/phdd#width> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://rdf-vocabulary.ddialliance.org/phdd#width> <http://www.w3.org/2000/01/rdf-schema#label> "width"@en .
+<http://rdf-vocabulary.ddialliance.org/phdd#width> <http://www.w3.org/2000/01/rdf-schema#comment> "\n\tColumn width in a table with fixed record length. Must be specified if a value for \"endPosition\" is not provided.\n\n\tEquivalent element in DDI 3.2: p:Width\n\tDDI 3.2 Documentation: http://www.ddialliance.org/Specification/DDI-Lifecycle/3.2/XMLSchema/FieldLevelDocumentation/schemas/physicaldataproduct_xsd/elements/Width.html\n\t"@en .
+<http://rdf-vocabulary.ddialliance.org/phdd#width> <http://www.w3.org/2000/01/rdf-schema#domain> <http://rdf-vocabulary.ddialliance.org/phdd#ColumnDescription> .
+<http://rdf-vocabulary.ddialliance.org/phdd#width> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#positiveInteger> .
+<http://rdf-vocabulary.ddialliance.org/phdd#width> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://rdf-vocabulary.ddialliance.org/phdd> .
+<http://rdf-vocabulary.ddialliance.org/phdd#width> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ddialliance.org/Specification/DDI-Lifecycle/3.2/XMLSchema/FieldLevelDocumentation/schemas/physicaldataproduct_xsd/elements/Width.html> .
+<http://rdf-vocabulary.ddialliance.org/phdd#inputProgram> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://rdf-vocabulary.ddialliance.org/phdd#inputProgram> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://rdf-vocabulary.ddialliance.org/phdd#inputProgram> <http://www.w3.org/2000/01/rdf-schema#label> "Input program"@en .
+<http://rdf-vocabulary.ddialliance.org/phdd#inputProgram> <http://www.w3.org/2000/01/rdf-schema#comment> "Program or program statements for reading the data.\n\n\tRelated element in DDI 3.2: r:CommandFile\n\tDDI 3.2 Documentation: http://www.ddialliance.org/Specification/DDI-Lifecycle/3.2/XMLSchema/FieldLevelDocumentation/schemas/reusable_xsd/elements/CommandFile.html\n\t"@en .
+<http://rdf-vocabulary.ddialliance.org/phdd#inputProgram> <http://www.w3.org/2000/01/rdf-schema#domain> <http://rdf-vocabulary.ddialliance.org/phdd#TableDescription> .
+<http://rdf-vocabulary.ddialliance.org/phdd#inputProgram> <http://www.w3.org/2000/01/rdf-schema#range> <http://rdf-vocabulary.ddialliance.org/phdd#InputProgram> .
+<http://rdf-vocabulary.ddialliance.org/phdd#inputProgram> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://rdf-vocabulary.ddialliance.org/phdd> .
+<http://rdf-vocabulary.ddialliance.org/phdd#isDescribedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://rdf-vocabulary.ddialliance.org/phdd#isDescribedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://rdf-vocabulary.ddialliance.org/phdd#isDescribedBy> <http://www.w3.org/2000/01/rdf-schema#label> "is described by"@en .
+<http://rdf-vocabulary.ddialliance.org/phdd#isDescribedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "is described by"@en .
+_:node18o8vi0ecx2610685 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:node18o8vi0ecx2610686 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://rdf-vocabulary.ddialliance.org/phdd#Table> .
+_:node18o8vi0ecx2610686 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:node18o8vi0ecx2610687 .
+_:node18o8vi0ecx2610687 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://rdf-vocabulary.ddialliance.org/phdd#Column> .
+_:node18o8vi0ecx2610687 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:node18o8vi0ecx2610685 <http://www.w3.org/2002/07/owl#unionOf> _:node18o8vi0ecx2610686 .
+<http://rdf-vocabulary.ddialliance.org/phdd#isDescribedBy> <http://www.w3.org/2000/01/rdf-schema#domain> _:node18o8vi0ecx2610685 .
+_:node18o8vi0ecx2610688 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:node18o8vi0ecx2610689 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://rdf-vocabulary.ddialliance.org/phdd#TableDescription> .
+_:node18o8vi0ecx2610689 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:node18o8vi0ecx2610690 .
+_:node18o8vi0ecx2610690 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://rdf-vocabulary.ddialliance.org/phdd#ColumnDescription> .
+_:node18o8vi0ecx2610690 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:node18o8vi0ecx2610688 <http://www.w3.org/2002/07/owl#unionOf> _:node18o8vi0ecx2610689 .
+<http://rdf-vocabulary.ddialliance.org/phdd#isDescribedBy> <http://www.w3.org/2000/01/rdf-schema#range> _:node18o8vi0ecx2610688 .
+<http://rdf-vocabulary.ddialliance.org/phdd#isDescribedBy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://rdf-vocabulary.ddialliance.org/phdd> .
+<http://rdf-vocabulary.ddialliance.org/phdd#isStructuredBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://rdf-vocabulary.ddialliance.org/phdd#isStructuredBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://rdf-vocabulary.ddialliance.org/phdd#isStructuredBy> <http://www.w3.org/2000/01/rdf-schema#label> "is structured by"@en .
+<http://rdf-vocabulary.ddialliance.org/phdd#isStructuredBy> <http://www.w3.org/2000/01/rdf-schema#comment> "is structured by"@en .
+<http://rdf-vocabulary.ddialliance.org/phdd#isStructuredBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://rdf-vocabulary.ddialliance.org/phdd#Table> .
+<http://rdf-vocabulary.ddialliance.org/phdd#isStructuredBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://rdf-vocabulary.ddialliance.org/phdd#TableStructure> .
+<http://rdf-vocabulary.ddialliance.org/phdd#isStructuredBy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://rdf-vocabulary.ddialliance.org/phdd> .
+<http://rdf-vocabulary.ddialliance.org/phdd#column> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://rdf-vocabulary.ddialliance.org/phdd#column> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://rdf-vocabulary.ddialliance.org/phdd#column> <http://www.w3.org/2000/01/rdf-schema#label> "column"@en .
+<http://rdf-vocabulary.ddialliance.org/phdd#column> <http://www.w3.org/2000/01/rdf-schema#comment> "\n\tA column of a table. Other terms are variable or data item.\n\n\tEquivalent class in Disco: Variable\n\tDisco documentation: http://rdf-vocabulary.ddialliance.org/discovery.html#variable-and-variable-definition\n\tEquivalent element in DDI 3.2: l:Variable\n\tDDI 3.2 Documentation:  http://www.ddialliance.org/Specification/DDI-Lifecycle/3.2/XMLSchema/FieldLevelDocumentation/schemas/logicalproduct_xsd/elements/Variable.html\n\t"@en .
+<http://rdf-vocabulary.ddialliance.org/phdd#column> <http://www.w3.org/2000/01/rdf-schema#domain> <http://rdf-vocabulary.ddialliance.org/phdd#TableStructure> .
+<http://rdf-vocabulary.ddialliance.org/phdd#column> <http://www.w3.org/2000/01/rdf-schema#range> <http://rdf-vocabulary.ddialliance.org/phdd#Column> .
+<http://rdf-vocabulary.ddialliance.org/phdd#column> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://rdf-vocabulary.ddialliance.org/phdd> .
+<http://rdf-vocabulary.ddialliance.org/phdd#defaultLocale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://rdf-vocabulary.ddialliance.org/phdd#defaultLocale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://rdf-vocabulary.ddialliance.org/phdd#defaultLocale> <http://www.w3.org/2000/01/rdf-schema#label> "Default locale"@en .
+<http://rdf-vocabulary.ddialliance.org/phdd#defaultLocale> <http://www.w3.org/2000/01/rdf-schema#comment> "\n\tThe default locale of text in the table. It is a set of parameters that defines the country, and any special variant preferences similar to BCP 47. The language can be defined by \"defaultLanguage\". Supports the use of an external controlled vocabulary in SKOS.\n\n\tRelated element in DDI 3.2: p:LocaleOfData\n\tDDI 3.2 Documentation: http://www.ddialliance.org/Specification/DDI-Lifecycle/3.2/XMLSchema/FieldLevelDocumentation/schemas/physicaldataproduct_xsd/elements/LocaleOfData.html\n\t"@en .
+<http://rdf-vocabulary.ddialliance.org/phdd#defaultLocale> <http://www.w3.org/2000/01/rdf-schema#domain> <http://rdf-vocabulary.ddialliance.org/phdd#TableStructure> .
+_:node18o8vi0ecx2610691 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:node18o8vi0ecx2610692 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:node18o8vi0ecx2610692 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:node18o8vi0ecx2610693 .
+_:node18o8vi0ecx2610693 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#string> .
+_:node18o8vi0ecx2610693 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:node18o8vi0ecx2610691 <http://www.w3.org/2002/07/owl#unionOf> _:node18o8vi0ecx2610692 .
+<http://rdf-vocabulary.ddialliance.org/phdd#defaultLocale> <http://www.w3.org/2000/01/rdf-schema#range> _:node18o8vi0ecx2610691 .
+<http://rdf-vocabulary.ddialliance.org/phdd#defaultLocale> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://rdf-vocabulary.ddialliance.org/phdd> .
+<http://rdf-vocabulary.ddialliance.org/phdd#defaultLocale> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.ddialliance.org/Specification/DDI-Lifecycle/3.2/XMLSchema/FieldLevelDocumentation/schemas/physicaldataproduct_xsd/elements/LocaleOfData.html> .
+<http://rdf-vocabulary.ddialliance.org/phdd#characterSet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://rdf-vocabulary.ddialliance.org/phdd#characterSet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://rdf-vocabulary.ddialliance.org/phdd#characterSet> <http://www.w3.org/2000/01/rdf-schema#label> "character set"@en .
+<http://rdf-vocabulary.ddialliance.org/phdd#characterSet> <http://www.w3.org/2000/01/rdf-schema#comment> "\n\tThe character set or encoding used in the table. Supports the use of an external controlled vocabulary in SKOS.\n\n\tEquivalent element in DDI 3.2: CharacterSet\n\tDDI 3.2 Documentation: http://www.ddialliance.org/Specification/DDI-Lifecycle/3.2/XMLSchema/FieldLevelDocumentation/schemas/reusable_xsd/elements/CharacterSet.html\n\t"@en .
+<http://rdf-vocabulary.ddialliance.org/phdd#characterSet> <http://www.w3.org/2000/01/rdf-schema#domain> <http://rdf-vocabulary.ddialliance.org/phdd#TableStructure> .
+_:node18o8vi0ecx2610694 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:node18o8vi0ecx2610695 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:node18o8vi0ecx2610695 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:node18o8vi0ecx2610696 .
+_:node18o8vi0ecx2610696 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#string> .
+_:node18o8vi0ecx2610696 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:node18o8vi0ecx2610694 <http://www.w3.org/2002/07/owl#unionOf> _:node18o8vi0ecx2610695 .
+<http://rdf-vocabulary.ddialliance.org/phdd#characterSet> <http://www.w3.org/2000/01/rdf-schema#range> _:node18o8vi0ecx2610694 .
+<http://rdf-vocabulary.ddialliance.org/phdd#characterSet> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://rdf-vocabulary.ddialliance.org/phdd> .
+<http://rdf-vocabulary.ddialliance.org/phdd#characterSet> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ddialliance.org/Specification/DDI-Lifecycle/3.2/XMLSchema/FieldLevelDocumentation/schemas/reusable_xsd/elements/CharacterSet.html> .
+<http://rdf-vocabulary.ddialliance.org/phdd#defaultLanguage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://rdf-vocabulary.ddialliance.org/phdd#defaultLanguage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://rdf-vocabulary.ddialliance.org/phdd#defaultLanguage> <http://www.w3.org/2000/01/rdf-schema#label> "Default language"@en .
+<http://rdf-vocabulary.ddialliance.org/phdd#defaultLanguage> <http://www.w3.org/2000/01/rdf-schema#comment> "\n\tDefault language of text in the table. Supports the use of an external controlled vocabulary in SKOS.\n\n\tRelated element in DDI 3.2: p:LanguageOfData\n\tDDI 3.2 Documentation: http://www.ddialliance.org/Specification/DDI-Lifecycle/3.2/XMLSchema/FieldLevelDocumentation/schemas/physicaldataproduct_xsd/elements/LanguageOfData.html\n\t"@en .
+<http://rdf-vocabulary.ddialliance.org/phdd#defaultLanguage> <http://www.w3.org/2000/01/rdf-schema#domain> <http://rdf-vocabulary.ddialliance.org/phdd#TableStructure> .
+_:node18o8vi0ecx2610697 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:node18o8vi0ecx2610698 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:node18o8vi0ecx2610698 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:node18o8vi0ecx2610699 .
+_:node18o8vi0ecx2610699 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#string> .
+_:node18o8vi0ecx2610699 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:node18o8vi0ecx2610697 <http://www.w3.org/2002/07/owl#unionOf> _:node18o8vi0ecx2610698 .
+<http://rdf-vocabulary.ddialliance.org/phdd#defaultLanguage> <http://www.w3.org/2000/01/rdf-schema#range> _:node18o8vi0ecx2610697 .
+<http://rdf-vocabulary.ddialliance.org/phdd#defaultLanguage> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://rdf-vocabulary.ddialliance.org/phdd> .
+<http://rdf-vocabulary.ddialliance.org/phdd#defaultLanguage> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.ddialliance.org/Specification/DDI-Lifecycle/3.2/XMLSchema/FieldLevelDocumentation/schemas/physicaldataproduct_xsd/elements/LanguageOfData.html> .
+<http://rdf-vocabulary.ddialliance.org/phdd#storageFormat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://rdf-vocabulary.ddialliance.org/phdd#storageFormat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://rdf-vocabulary.ddialliance.org/phdd#storageFormat> <http://www.w3.org/2000/01/rdf-schema#label> "Storage format"@en .
+<http://rdf-vocabulary.ddialliance.org/phdd#storageFormat> <http://www.w3.org/2000/01/rdf-schema#comment> "\n\tDefinition of the storage format of data values of a column. Supports the use of an external controlled vocabulary in SKOS.\n\n\tEquivalent element in DDI 3.2: p:StorageFormat\n\tDDI 3.2 Documentation: http://www.ddialliance.org/Specification/DDI-Lifecycle/3.2/XMLSchema/FieldLevelDocumentation/schemas/physicaldataproduct_xsd/elements/StorageFormat.html\n\t"@en .
+<http://rdf-vocabulary.ddialliance.org/phdd#storageFormat> <http://www.w3.org/2000/01/rdf-schema#domain> <http://rdf-vocabulary.ddialliance.org/phdd#ColumnDescription> .
+_:node18o8vi0ecx2610700 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:node18o8vi0ecx2610701 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:node18o8vi0ecx2610701 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:node18o8vi0ecx2610702 .
+_:node18o8vi0ecx2610702 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#string> .
+_:node18o8vi0ecx2610702 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:node18o8vi0ecx2610700 <http://www.w3.org/2002/07/owl#unionOf> _:node18o8vi0ecx2610701 .
+<http://rdf-vocabulary.ddialliance.org/phdd#storageFormat> <http://www.w3.org/2000/01/rdf-schema#range> _:node18o8vi0ecx2610700 .
+<http://rdf-vocabulary.ddialliance.org/phdd#storageFormat> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://rdf-vocabulary.ddialliance.org/phdd> .
+<http://rdf-vocabulary.ddialliance.org/phdd#storageFormat> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ddialliance.org/Specification/DDI-Lifecycle/3.2/XMLSchema/FieldLevelDocumentation/schemas/physicaldataproduct_xsd/elements/StorageFormat.html> .
+<http://rdf-vocabulary.ddialliance.org/phdd#recommendedDisplayDataFormat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://rdf-vocabulary.ddialliance.org/phdd#recommendedDisplayDataFormat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://rdf-vocabulary.ddialliance.org/phdd#recommendedDisplayDataFormat> <http://www.w3.org/2000/01/rdf-schema#label> "Recommended display data format"@en .
+<http://rdf-vocabulary.ddialliance.org/phdd#recommendedDisplayDataFormat> <http://www.w3.org/2000/01/rdf-schema#comment> "\n\tThe recommended display format of the data values of a column. Supports the use of an external controlled vocabulary in SKOS.\n\n\tEquivalent element in DDI 3.2: r:GenericOutputFormat\n\tDDI 3.2 Documentation: http://www.ddialliance.org/Specification/DDI-Lifecycle/3.2/XMLSchema/FieldLevelDocumentation/schemas/reusable_xsd/elements/GenericOutputFormat.html\n\t"@en .
+<http://rdf-vocabulary.ddialliance.org/phdd#recommendedDisplayDataFormat> <http://www.w3.org/2000/01/rdf-schema#domain> <http://rdf-vocabulary.ddialliance.org/phdd#ColumnDescription> .
+_:node18o8vi0ecx2610703 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:node18o8vi0ecx2610704 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:node18o8vi0ecx2610704 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:node18o8vi0ecx2610705 .
+_:node18o8vi0ecx2610705 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#string> .
+_:node18o8vi0ecx2610705 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:node18o8vi0ecx2610703 <http://www.w3.org/2002/07/owl#unionOf> _:node18o8vi0ecx2610704 .
+<http://rdf-vocabulary.ddialliance.org/phdd#recommendedDisplayDataFormat> <http://www.w3.org/2000/01/rdf-schema#range> _:node18o8vi0ecx2610703 .
+<http://rdf-vocabulary.ddialliance.org/phdd#recommendedDisplayDataFormat> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://rdf-vocabulary.ddialliance.org/phdd> .
+<http://rdf-vocabulary.ddialliance.org/phdd#recommendedDisplayDataFormat> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ddialliance.org/Specification/DDI-Lifecycle/3.2/XMLSchema/FieldLevelDocumentation/schemas/reusable_xsd/elements/GenericOutputFormat.html> .
