@@ -251,7 +251,7 @@ phdd:recordLength a rdf:Property, owl:DatatypeProperty;
     rdfs:label "Record length"@en;
 	rdfs:comment "The length of a record with fixed length."@en;
     rdfs:domain phdd:FixedRecordLength;
-    rdfs:range xsd:nonPositiveInteger;
+    rdfs:range xsd:positiveInteger;
     rdfs:isDefinedBy <http://rdf-vocabulary.ddialliance.org/phdd>.
 	
 # delimiter
