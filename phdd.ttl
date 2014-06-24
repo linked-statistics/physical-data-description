@@ -295,7 +295,7 @@ phdd:recordNumber a rdf:Property, owl:DatatypeProperty;
 phdd:startPosition a rdf:Property, owl:DatatypeProperty;
     rdfs:label "start position"@en;
 	rdfs:comment "start position"@en;
-    rdfs:domain phdd:ColumnDescription;
+    rdfs:domain phdd:FixedColumnDescription;
     rdfs:range xsd:positiveInteger;
     rdfs:isDefinedBy <http://rdf-vocabulary.ddialliance.org/phdd>.
 	
@@ -303,7 +303,7 @@ phdd:startPosition a rdf:Property, owl:DatatypeProperty;
 phdd:endPosition a rdf:Property, owl:DatatypeProperty;
     rdfs:label "end position"@en;
 	rdfs:comment "end position"@en;
-    rdfs:domain phdd:ColumnDescription;
+    rdfs:domain phdd:FixedColumnDescription;
     rdfs:range xsd:positiveInteger;
     rdfs:isDefinedBy <http://rdf-vocabulary.ddialliance.org/phdd>.
 	
@@ -311,7 +311,7 @@ phdd:endPosition a rdf:Property, owl:DatatypeProperty;
 phdd:width a rdf:Property, owl:DatatypeProperty;
     rdfs:label "width"@en;
 	rdfs:comment "width"@en;
-    rdfs:domain phdd:ColumnDescription;
+    rdfs:domain phdd:FixedColumnDescription;
     rdfs:range xsd:positiveInteger;
     rdfs:isDefinedBy <http://rdf-vocabulary.ddialliance.org/phdd>.
 
